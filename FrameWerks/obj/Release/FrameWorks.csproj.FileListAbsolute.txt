@@ -1,0 +1,6 @@
+C:\Users\rich.DESIGNSYNTHESIS\Documents\Visual Studio 2008\Projects\FrameWerks\FrameWerks\bin\Release\FrameWorks.dll
+C:\Users\rich.DESIGNSYNTHESIS\Documents\Visual Studio 2008\Projects\FrameWerks\FrameWerks\bin\Release\FrameWorks.pdb
+C:\Users\rich.DESIGNSYNTHESIS\Documents\Visual Studio 2008\Projects\FrameWerks\FrameWerks\obj\Release\ResolveAssemblyReference.cache
+C:\Users\rich.DESIGNSYNTHESIS\Documents\Visual Studio 2008\Projects\FrameWerks\FrameWerks\obj\Release\FrameWorks.dll
+C:\Users\rich.DESIGNSYNTHESIS\Documents\Visual Studio 2008\Projects\FrameWerks\FrameWerks\obj\Release\FrameWorks.pdb
+C:\Users\rich.DESIGNSYNTHESIS\Documents\Visual Studio 2008\Projects\FrameWerks\FrameWerks\bin\Release\FrameWorks.dll.config

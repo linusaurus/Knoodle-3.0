@@ -1,0 +1,12 @@
+bin\Release\FrameWerks.dll.config
+bin\Release\FrameWerks.dll
+bin\Release\FrameWerks.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\FrameWerks.dll
+obj\Release\FrameWerks.pdb
+bin\Debug\FrameWerks.dll.config
+bin\Debug\FrameWerks.dll
+bin\Debug\FrameWerks.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\FrameWerks.dll
+obj\Debug\FrameWerks.pdb
