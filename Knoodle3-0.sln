@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weaselware.Knoodle", "FrameWorks.Knoodle\Weaselware.Knoodle.csproj", "{51262F21-6CC0-4084-98B6-69F74F5DE59F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FrameWorks", "FrameWerks\FrameWorks.csproj", "{747D77D4-88D8-4D73-AE9B-693D7C8D7619}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://knoodleworks.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = FrameWerks\\FrameWorks.csproj
+		SccProjectName1 = FrameWerks
+		SccLocalPath1 = FrameWerks
+		SccProjectUniqueName2 = FrameWorks.Knoodle\\Weaselware.Knoodle.csproj
+		SccProjectName2 = FrameWorks.Knoodle
+		SccLocalPath2 = FrameWorks.Knoodle
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51262F21-6CC0-4084-98B6-69F74F5DE59F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51262F21-6CC0-4084-98B6-69F74F5DE59F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51262F21-6CC0-4084-98B6-69F74F5DE59F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51262F21-6CC0-4084-98B6-69F74F5DE59F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747D77D4-88D8-4D73-AE9B-693D7C8D7619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747D77D4-88D8-4D73-AE9B-693D7C8D7619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747D77D4-88D8-4D73-AE9B-693D7C8D7619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747D77D4-88D8-4D73-AE9B-693D7C8D7619}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

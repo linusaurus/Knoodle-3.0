@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{51262F21-6CC0-4084-98B6-69F74F5DE59F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Weaselware.Knoodle</RootNamespace>
+    <AssemblyName>ChangeConnection</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Weaselware.Knoodle.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntitySpaces.Core, Version=2009.1.209.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Interfaces, Version=2009.1.209.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.Loader, Version=2009.1.209.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.MSAccessProvider, Version=2009.1.209.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.MSAccessProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="EntitySpaces.SqlClientProvider, Version=2009.1.209.0, Culture=neutral, PublicKeyToken=79073dc052c106ac, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\EntitySpaces 2009\Runtimes\.NET 3.5\EntitySpaces.SqlClientProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Mindscape.LightSpeed">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Mindscape\LightSpeed\Bin\Mindscape.LightSpeed.dll</HintPath>
+    </Reference>
+    <Reference Include="Mindscape.LightSpeed.Linq">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Mindscape\LightSpeed\Bin\Mindscape.LightSpeed.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="MultithreadingWorker, Version=1.0.1970.18072, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Multithreading\Multithreading\bin\Release\MultithreadingWorker.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Optimizer\BinPacking.cs" />
+    <Compile Include="Optimizer\BranchAndBound.cs" />
+    <Compile Include="ClassNameFinder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassNameFinder.designer.cs">
+      <DependentUpon>ClassNameFinder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\Component.cs" />
+    <Compile Include="Custom\ComponentCollection.cs" />
+    <Compile Include="Custom\ComponentQuery.cs" />
+    <Compile Include="Custom\Output.cs" />
+    <Compile Include="Custom\OutputCollection.cs" />
+    <Compile Include="Custom\OutputQuery.cs" />
+    <Compile Include="Custom\Project.cs" />
+    <Compile Include="Custom\ProjectCollection.cs" />
+    <Compile Include="Custom\ProjectQuery.cs" />
+    <Compile Include="Custom\Unit.cs" />
+    <Compile Include="Custom\UnitCollection.cs" />
+    <Compile Include="Custom\UnitQuery.cs" />
+    <Compile Include="DBengine.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Generated\Component.cs" />
+    <Compile Include="Generated\Output.cs" />
+    <Compile Include="Generated\Project.cs" />
+    <Compile Include="Generated\Unit.cs" />
+    <Compile Include="outputDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>outputDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PartEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartEditor.Designer.cs">
+      <DependentUpon>PartEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjectEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectEdit.Designer.cs">
+      <DependentUpon>ProjectEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Optimizer\SortingCriteria.cs" />
+    <EmbeddedResource Include="ClassNameFinder.resx">
+      <DependentUpon>ClassNameFinder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartEditor.resx">
+      <DependentUpon>PartEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectEdit.resx">
+      <DependentUpon>ProjectEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings1.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\Debug\ChangeConnection.exe.config" />
+    <None Include="bin\Debug\ChangeConnection.vshost.exe.config" />
+    <None Include="bin\Debug\ChangeConnection.vshost.exe.manifest" />
+    <None Include="bin\Release\ChangeConnection.exe.config" />
+    <None Include="bin\Release\ChangeConnection.vshost.exe.config" />
+    <None Include="bin\Release\ChangeConnection.vshost.exe.manifest" />
+    <None Include="outputDataSet.xsc">
+      <DependentUpon>outputDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="outputDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>outputDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="outputDataSet.xss">
+      <DependentUpon>outputDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\BusinessObjects.OutputCollection.datasource" />
+    <None Include="Properties\DataSources\BusinessObjects.Project.datasource" />
+    <None Include="Properties\DataSources\FrameWorks.Part.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FrameWerks\FrameWorks.csproj">
+      <Project>{747D77D4-88D8-4D73-AE9B-693D7C8D7619}</Project>
+      <Name>FrameWorks</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\ChangeConnection.exe" />
+    <Content Include="bin\Debug\ChangeConnection.pdb" />
+    <Content Include="bin\Debug\ChangeConnection.vshost.exe" />
+    <Content Include="bin\Debug\EntitySpaces.Core.dll" />
+    <Content Include="bin\Debug\EntitySpaces.Interfaces.dll" />
+    <Content Include="bin\Debug\EntitySpaces.Loader.dll" />
+    <Content Include="bin\Debug\EntitySpaces.MSAccessProvider.dll" />
+    <Content Include="bin\Debug\EntitySpaces.SqlClientProvider.dll" />
+    <Content Include="bin\Debug\FrameWorks.dll" />
+    <Content Include="bin\Debug\FrameWorks.pdb" />
+    <Content Include="bin\Debug\MultithreadingWorker.dll" />
+    <Content Include="bin\Release\ChangeConnection.exe" />
+    <Content Include="bin\Release\ChangeConnection.pdb" />
+    <Content Include="bin\Release\ChangeConnection.vshost.exe" />
+    <Content Include="bin\Release\EntitySpaces.Core.dll" />
+    <Content Include="bin\Release\EntitySpaces.Interfaces.dll" />
+    <Content Include="bin\Release\EntitySpaces.Loader.dll" />
+    <Content Include="bin\Release\EntitySpaces.MSAccessProvider.dll" />
+    <Content Include="bin\Release\EntitySpaces.SqlClientProvider.dll" />
+    <Content Include="bin\Release\FrameWorks.dll" />
+    <Content Include="bin\Release\FrameWorks.pdb" />
+    <Content Include="bin\Release\MultithreadingWorker.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
