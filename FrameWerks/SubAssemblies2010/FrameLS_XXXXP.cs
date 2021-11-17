@@ -43,7 +43,7 @@ namespace FrameWorks.Makes.System2010
         const int panelCount = 4;
         const decimal faceCapX = 3.625m;
         const decimal facEndCap = 2.875m;
-        const decimal facEndAcc = 2.9375m;
+        const decimal facEndAcc = 3.9508m;
         const decimal stileOverLap = 2.5625m;
         const decimal stileOvrLpX2 = 2.0m * 2.5625m;
         const decimal stileOvrLpX3 = 3.0m * 2.5625m;
@@ -95,18 +95,16 @@ namespace FrameWorks.Makes.System2010
 
             //TopTrackPXXXX
             part = new Part(3406, "TopTrackPXXXX", this, 1, (trackHelper.DoorPanelWidth * 5.0m - stileOvrLpX3) + trackAddPocket + doorGap);
-            part.PartGroupType = "TopTrackUni-Parts";
+            part.PartGroupType = "TopTrackUni";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             //TopTrackPXXX
             part = new Part(3406, "TopTrackPXXX", this, 1, (trackHelper.DoorPanelWidth * 4.0m - stileOvrLpX2) + trackAddPocket + trackAddOvTrav);
-            part.PartGroupType = "TopTrackUni-Parts";
+            part.PartGroupType = "TopTrackUni";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
 
@@ -114,55 +112,32 @@ namespace FrameWorks.Makes.System2010
 
             //TopTrackPXX
             part = new Part(3406, "TopTrackPXX", this, 1, (trackHelper.DoorPanelWidth * 3.0m - stileOverLap) + trackAddPocket + trackAddOvTrav);
-            part.PartGroupType = "TopTrackUni-Parts";
+            part.PartGroupType = "TopTrackUni";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             //TopTrackPX
             part = new Part(3406, "TopTrackPX", this, 1, (trackHelper.DoorPanelWidth * 2.0m + trackAddPocket + trackAddOvTrav));
-            part.PartGroupType = "TopTrackUni-Parts";
+            part.PartGroupType = "TopTrackUni";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            //ShapedYtrackRubber -->> 
-            //for (int i = 0; i < 2; i++)
-            //{
-
-
-            //part = new Part(3766, "ShapedYtrackRubber", this, 1, 0.0m);
-            //part.PartGroupType = "TopTrackY-Parts";
-            //part.PartLabel = "";
-
-            //m_parts.Add(part);
-
-            //}
-
-            //////////////////////////////////////////////////////////////////////////////
-
 
             #endregion
 
             #region PocketGuides
 
-
             // PocketGuide
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(5151, "WedgePocketGuide", this, 1, 0.0m);
-                part.PartGroupType = "PocketGuides";
-                part.PartLabel = "";
-                part.PartThick = 0.405m;
-                part.PartWidth = 1.4715m;
-                part.PartLength = 5.0m;
-
-                m_parts.Add(part);
-            }
+            part = new Part(5151, "WedgePocketGuide", this, 2, 0.0m);
+            part.PartGroupType = "PocketGuides";
+            part.PartLabel = "";
+            part.PartThick = 0.405m;
+            part.PartWidth = 1.4715m;
+            part.PartLength = 5.0m;
+            m_parts.Add(part);
 
             #endregion
 
@@ -170,27 +145,19 @@ namespace FrameWorks.Makes.System2010
 
             //////////////////////////////////////////////////////////////////////////////
 
-            //OTB_Left
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(5272, "OTB_Left", this, 1, 0.0m);
-                part.PartGroupType = "Over_Travel";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-            }
+            //OTB_XO_XP
+            part = new Part(5272, "OTB_XO_XP", this, 3, 0.0m);
+            part.PartGroupType = "Over_Travel";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             //OTB_Filler
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(5271, "OTB_Filler", this, 1, 0.0m);
-                part.PartGroupType = "Over_Travel";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-            }
+            part = new Part(5271, "OTB_Filler", this, 3, 0.0m);
+            part.PartGroupType = "Over_Travel";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
@@ -201,108 +168,74 @@ namespace FrameWorks.Makes.System2010
             //////////////////////////////////////////////////////////////////////////////
 
             //AlumJambXXDoor -->> 
-            for (int i = 0; i < 4; i++)
-            {
-
-                part = new Part(4357, "AlumJambXXDoor", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4357, "AlumJambXXDoor", this, 4, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
-            // FaciaHeadXXXX ^^
-            for (int i = 0; i < 2; i++)
-            {
-
-                part = new Part(4362, "FaciaHeadXXXX", this, 1, m_subAssemblyWidth - jambDimW2X);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
-
-            // FaciaHeadExtXXXX ^^
-            part = new Part(4362, "FaciaHeadExtXXXX", this, 1, (trackHelper.DoorPanelWidth) - jambInset - spltHdRed);
-            part.PartGroupType = "Frame-Parts";
+            // SplitHeadXXXX ^^
+            part = new Part(4362, "SplitHeadXXXX", this, 2, m_subAssemblyWidth - jambDimW2X);
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
-            m_parts.Add(part);
-
-
-            ////////////////////////////////////////////////////////////////////////////////
-
-            // FaciaHeadExtXXX ^^
-            part = new Part(4362, "FaciaHeadExtXXX", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-
             m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
-            // FaciaHeadExtXX ^^
-            part = new Part(4362, "FaciaHeadExtXX", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
-            part.PartGroupType = "Frame-Parts";
+            // SplitHeadExtXXXX ^^
+            part = new Part(4362, "SplitHeadExtXXXX", this, 1, (trackHelper.DoorPanelWidth) - jambInset - spltHdRed);
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
-
-            // FaciaHeadExtX ^^
-            part = new Part(4362, "FaciaHeadExtX", this, 1, (trackHelper.DoorPanelWidth) + faceXdoor - jambInset);
-            part.PartGroupType = "Frame-Parts";
+            // SplitHeadExtXXX ^^
+            part = new Part(4362, "SplitHeadExtXXX", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
+            ////////////////////////////////////////////////////////////////////////////////
+
+            // SplitHeadExtXX ^^
+            part = new Part(4362, "SplitHeadExtXX", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
-            // FaciaCapX ^^
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(4362, "FaciaCapX", this, 1, faceCapX);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            // SplitHeadExtX ^^
+            part = new Part(4362, "SplitHeadExtX", this, 1, (trackHelper.DoorPanelWidth) + faceXdoor - jambInset);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
-            // FaciAccess ^^
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(4362, "FaciAccess", this, 1, facEndAcc);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
+            // SplitHdCapX ^^
+            part = new Part(4362, "SplitHdCapX", this, 3, faceCapX);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
+            ////////////////////////////////////////////////////////////////////////////////
 
-            }
+            // AccessCover ^^
+            part = new Part(4362, "AccessCover", this, 3, facEndAcc);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
             // FacEndCap ^^
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(4362, "FacEndCap", this, 1, facEndCap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4362, "FacEndCap", this, 3, facEndCap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
@@ -311,41 +244,29 @@ namespace FrameWorks.Makes.System2010
             #region PocketCloseOut
 
             //AlumBar
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(2556, "AlumBar", this, 1, 0.0m);
-                part.PartGroupType = "PocketCloseOut";
-                part.PartThick = 0.25m;
-                part.PartWidth = 3.0m;
-                part.PartLength = 10.875m;
-                part.PartLabel = "PXXXX";
-
-                m_parts.Add(part);
-            }
+            part = new Part(2556, "AlumBar", this, 3, 0.0m);
+            part.PartGroupType = "PocketCloseOut";
+            part.PartThick = 0.25m;
+            part.PartWidth = 3.0m;
+            part.PartLength = 10.875m;
+            part.PartLabel = "PXXXX";
+            m_parts.Add(part);
 
             //Extira_Closeout
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(3210, "Extira_Closeout", this, 1, m_subAssemblyHieght - faceMidoor);
-                part.PartGroupType = "PocketCloseOut";
-                part.PartThick = 0.75m;
-                part.PartWidth = 11.25m;
-                part.PartLabel = "PXXXX";
-
-                m_parts.Add(part);
-            }
+            part = new Part(3210, "Extira_Closeout", this, 1, m_subAssemblyHieght - faceMidoor);
+            part.PartGroupType = "PocketCloseOut";
+            part.PartThick = 0.75m;
+            part.PartWidth = 11.25m;
+            part.PartLabel = "PXXXX";
+            m_parts.Add(part);
 
             //Alum16gaCloseout
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(3438, "Alum16gaCloseout", this, 1, m_subAssemblyHieght - faceMidoor);
-                part.PartGroupType = "PocketCloseOut";
-                part.PartThick = 0.063m;
-                part.PartWidth = 9.0m;
-                part.PartLabel = "PXXXX";
-
-                m_parts.Add(part);
-            }
+            part = new Part(3438, "Alum16gaCloseout", this, 1, m_subAssemblyHieght - faceMidoor);
+            part.PartGroupType = "PocketCloseOut";
+            part.PartThick = 0.063m;
+            part.PartWidth = 9.0m;
+            part.PartLabel = "PXXXX";
+            m_parts.Add(part);
 
             #endregion
 
@@ -354,124 +275,85 @@ namespace FrameWorks.Makes.System2010
             //////////////////////////////////////////////////////////////////////////////
 
             //QuadSeal
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(4910, "QuadSeal", this, 1, 0.0m);
-                part.PartGroupType = "Pile_LS_Seals";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-            }
+            part = new Part(4910, "QuadSeal", this, 3, 0.0m);
+            part.PartGroupType = "Pile_LS_Seals";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             //Pile_LS_Seals -->> 
-            for (int i = 0; i < 4; i++)
-            {
-
-                part = new Part(4384, "Pile_LS_Seals", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Pile_LS_Seals-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(3979, "Pile_LS_Seals", this, 4, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Pile_LS_Seals";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             // Pile_LS_Seals ^^
-            for (int i = 0; i < 2; i++)
-            {
-
-                part = new Part(4384, "Pile_LS_Seals", this, 1, m_subAssemblyWidth - jambDimW2X);
-                part.PartGroupType = "Pile_LS_Seals-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(3979, "Pile_LS_Seals", this, 2, m_subAssemblyWidth - jambDimW2X);
+            part.PartGroupType = "Pile_LS_Seals";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
             // Pile_LS_Seals ^^
-            part = new Part(4384, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) - jambInset - spltHdRed);
-            part.PartGroupType = "Pile_LS_Seals-Parts";
+            part = new Part(3979, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) - jambInset - spltHdRed);
+            part.PartGroupType = "Pile_LS_Seals";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
 
             ////////////////////////////////////////////////////////////////////////////////
 
             // Pile_LS_Seals ^^
-            part = new Part(4384, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
-            part.PartGroupType = "Pile_LS_Seals-Parts";
+            part = new Part(3979, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
+            part.PartGroupType = "Pile_LS_Seals";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
             // Pile_LS_Seals ^^
-            part = new Part(4384, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
-            part.PartGroupType = "Pile_LS_Seals-Parts";
+            part = new Part(3979, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
+            part.PartGroupType = "Pile_LS_Seals";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
-
             // Pile_LS_Seals ^^
-            part = new Part(4384, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) + faceXdoor - jambInset);
-            part.PartGroupType = "Pile_LS_Seals-Parts";
+            part = new Part(3979, "Pile_LS_Seals", this, 1, (trackHelper.DoorPanelWidth) + faceXdoor - jambInset);
+            part.PartGroupType = "Pile_LS_Seals";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
+            ////////////////////////////////////////////////////////////////////////////////
+
+            // Pile_LS_Seals ^^
+            part = new Part(3979, "Pile_LS_Seals", this, 3, faceCapX);
+            part.PartGroupType = "Pile_LS_Seals";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
             // Pile_LS_Seals ^^
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(4384, "Pile_LS_Seals", this, 1, faceCapX);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(3979, "Pile_LS_Seals", this, 3, facEndAcc);
+            part.PartGroupType = "Pile_LS_Seals";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
             // Pile_LS_Seals ^^
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(4384, "Pile_LS_Seals", this, 1, facEndAcc);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(3979, "Pile_LS_Seals", this, 3, facEndCap);
+            part.PartGroupType = "Pile_LS_Sealss";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
-
-            // Pile_LS_Seals ^^
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(4384, "Pile_LS_Seals", this, 1, facEndCap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
-
-
 
             #endregion
 
@@ -525,27 +407,11 @@ namespace FrameWorks.Makes.System2010
 
             // HDPE_Head ^^
             part = new Part(3442, "HDPE_Head", this, 1, (trackHelper.DoorPanelWidth * 4.0m) + jambReduce2X + doorGap2X + doorGap);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "HDPE_Heads";
             part.PartLabel = notchHDPE;
             part.PartThick = 0.75m;
             part.PartWidth = 2.875m;
-
             m_parts.Add(part);
-
-            //////////////////////////////////////////////////////////////////////////////
-
-            // HDPE_Jamb
-            //for (int i = 0; i < 2; i++)
-            //{
-            //part = new Part(4400, "HDPE_Jamb", this, 1, m_subAssemblyHieght - calkGap - reducHDPE);
-            //part.PartGroupType = "HDPE_Head-Parts";
-            //part.PartLabel = "";
-            //part.PartThick = 0.75m;
-            //part.PartWidth = 2.875m;
-
-            //m_parts.Add(part);
-
-            //}
 
             //////////////////////////////////////////////////////////////////////////////
 

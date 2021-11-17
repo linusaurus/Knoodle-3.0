@@ -77,55 +77,32 @@ namespace FrameWorks.Makes.System2010
             string labelTopRail = string.Empty;
             string labelBotRail = string.Empty;
 
-
             #region NailFin
 
-
+            /////////////////////////////////////////////////////////////////////////////////////////
 
             // NailerWidthExt
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4373, "NailerWidthExt", this, 1, m_subAssemblyWidth + nailFinAd2X);
-                part.PartGroupType = "NailFin-Parts";
-                part.PartLabel = "1)MiterEnds";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4373, "NailerWidthExt", this, 2, m_subAssemblyWidth + nailFinAd2X);
+            part.PartGroupType = "NailFin";
+            part.PartLabel = "1)MiterEnds";
+            m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////
 
             //NailerVertExt
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4373, "NailerVertExt", this, 1, m_subAssemblyHieght + nailFinAd2X);
-                part.PartGroupType = "NailFin-Parts";
-                part.PartLabel = "1)MiterEnds";
-
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////////////////
-
-            // NailFinTabs
-
-            //part = new Part(3649, "NailFinTabs3Inch", this, Convert.ToInt32(this.Perimeter / 16.0m + 1.0m), NFtab);
-            //part.PartGroupType = "NailFin-Parts";
-            //part.PartLabel = "CUT_LENGTH_3_INCHES";
-
-            //m_parts.Add(part);
+            part = new Part(4373, "NailerVertExt", this, 2, m_subAssemblyHieght + nailFinAd2X);
+            part.PartGroupType = "NailFin";
+            part.PartLabel = "1)MiterEnds";
+            m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////
 
-
-
             #endregion
-
 
         }
 
         #endregion
 
     }
+
 }

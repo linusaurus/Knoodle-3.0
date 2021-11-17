@@ -200,7 +200,6 @@ namespace FrameWorks.Makes.TiburAlum
             part = new Part(2652, "Gasket23", this, 1, 0.0m);
             part.PartGroupType = "Hardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
 

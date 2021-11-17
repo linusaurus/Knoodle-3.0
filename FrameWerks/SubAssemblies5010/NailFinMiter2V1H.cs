@@ -43,9 +43,6 @@ namespace FrameWorks.Makes.System5010
         //Constant Values
         const decimal nailFinAd = 1.25m;
 
-
-
-
         #endregion
 
         #region Constructor
@@ -78,54 +75,38 @@ namespace FrameWorks.Makes.System5010
 
             #region NailFin
 
-            /////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // NailerWidthExt
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4501, "NailerWidthExt", this, 1, m_subAssemblyWidth + nailFinAd * 2.0m);
-                part.PartGroupType = "NailFin-Parts";
-                part.PartLabel = "1)MiterEnds90°";
+            part = new Part(4501, "NailerWidthExt", this, 1, m_subAssemblyWidth + nailFinAd * 2.0m);
+            part.PartGroupType = "NailFin";
+            part.PartLabel = "1)MiterEnds90°";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            /////////////////////////////////////////////////////////////////////////////////////////
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // NailerWidthExt
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4501, "NailerWidthExt", this, 1, m_subAssemblyDepth + nailFinAd * 2.0m);
-                part.PartGroupType = "NailFin-Parts";
-                part.PartLabel = "1)MiterEnds90°";
+            part = new Part(4501, "NailerWidthExt", this, 1, m_subAssemblyDepth + nailFinAd * 2.0m);
+            part.PartGroupType = "NailFin";
+            part.PartLabel = "1)MiterEnds90°";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            /////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //NailerVertExt
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4501, "NailerVertExt", this, 1, m_subAssemblyHieght + nailFinAd * 2.0m);
-                part.PartGroupType = "NailFin-Parts";
-                part.PartLabel = "1)MiterEnds";
+            part = new Part(4501, "NailerVertExt", this, 2, m_subAssemblyHieght + nailFinAd * 2.0m);
+            part.PartGroupType = "NailFin";
+            part.PartLabel = "1)MiterEnds";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
-
 
         }
 
         #endregion
 
     }
+
 }

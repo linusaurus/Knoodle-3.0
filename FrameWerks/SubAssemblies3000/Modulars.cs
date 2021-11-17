@@ -94,7 +94,7 @@ namespace FrameWorks.Makes.System3000
             {
                 //Multipoint Set for 76.61 <<>> 80.06
                 part = new Part(1972, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                
                 m_parts.Add(part);
@@ -104,7 +104,7 @@ namespace FrameWorks.Makes.System3000
             {
 
                 part = new Part(1971, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                               
                 m_parts.Add(part);
@@ -114,7 +114,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 83.01m) && (HingeAxisLength <= 85.96m))
             {
                 part = new Part(1973, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                                
                 m_parts.Add(part);
@@ -124,7 +124,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 85.96m) && (HingeAxisLength <= 88.92m))
             {
                 part = new Part(2704, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                                
                 m_parts.Add(part);
@@ -134,7 +134,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 88.92m) && (HingeAxisLength <= 91.87m))
             {
                 part = new Part(2134, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                                
                 m_parts.Add(part);
@@ -143,7 +143,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 91.87m) && (HingeAxisLength <= 94.82m))
             {
                 part = new Part(2117, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";               
+                part.PartGroupType = "Hardware";               
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                                
                 m_parts.Add(part);
@@ -152,7 +152,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 94.82m) && (HingeAxisLength <= 97.775m))
             {
                 part = new Part(1972, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                                
                 m_parts.Add(part);
@@ -161,7 +161,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 97.775m) && (HingeAxisLength <= 100.73m))
             {
                 part = new Part(1971, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                              
                 m_parts.Add(part);
@@ -170,7 +170,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 100.73m) && (HingeAxisLength <= 103.68m))
             {
                 part = new Part(1973, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";               
+                part.PartGroupType = "Hardware";               
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                              
                 m_parts.Add(part);
@@ -179,7 +179,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 103.68m) && (HingeAxisLength <= 106.635m))
             {
                 part = new Part(2704, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";               
+                part.PartGroupType = "Hardware";               
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                             
                 m_parts.Add(part);
@@ -188,7 +188,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 106.635m) && (HingeAxisLength <= 109.585m))
             {
                 part = new Part(2134, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";             
+                part.PartGroupType = "Hardware";             
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                            
                 m_parts.Add(part);
@@ -197,7 +197,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 109.585m) && (HingeAxisLength <= 112.54m))
             {
                 part = new Part(2117, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                            
                 m_parts.Add(part);
@@ -206,7 +206,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 112.54m) && (HingeAxisLength <= 115.49m))
             {
                 part = new Part(1972, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                              
                 m_parts.Add(part);
@@ -215,7 +215,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 115.49m) && (HingeAxisLength <= 118.445m))
             {
                 part = new Part(1971, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";             
+                part.PartGroupType = "Hardware";             
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                           
                 m_parts.Add(part);
@@ -225,7 +225,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 118.445m) && (HingeAxisLength <= 121.4m))
             {
                 part = new Part(1973, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";              
+                part.PartGroupType = "Hardware";              
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                           
                 m_parts.Add(part);
@@ -234,7 +234,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 121.4m) && (HingeAxisLength <= 124.35m))
             {
                 part = new Part(2704, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                             
                 m_parts.Add(part);
@@ -243,7 +243,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 124.35m) && (HingeAxisLength <= 127.305m))
             {
                 part = new Part(2134, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                              
                 m_parts.Add(part);
@@ -252,7 +252,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 127.305m) && (HingeAxisLength <= 130.75m))
             {
                 part = new Part(2117, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartName = "Top Ext";
                 part.PartLabel = "";                
                 m_parts.Add(part);
@@ -263,14 +263,12 @@ namespace FrameWorks.Makes.System3000
                 //throw HardwareApplicationError("Door Hieght Exceed Hardware Specs");
 
                 part = new Part(2117, "Top Extension", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartName = "Top Ext";
                 part.PartLabel = "EXCEEDSMAXHEIGHT";
                 m_parts.Add(part);
-
-
-
             }
+
             #endregion
 
             #region Middle Extension Logic
@@ -280,7 +278,7 @@ namespace FrameWorks.Makes.System3000
                 if ((HingeAxisLength > 76.61m) && (HingeAxisLength <= 94.82m))
                 {
                     part = new Part(1974, "Middle Extension", m_parent, 1, 1.0m);
-                    part.PartGroupType = "Hardware-Parts";                   
+                    part.PartGroupType = "Hardware";                   
                     part.PartName = "Mid Extension Low";
                     part.PartLabel = "";                                      
                     m_parts.Add(part);
@@ -289,7 +287,7 @@ namespace FrameWorks.Makes.System3000
                 else if ((HingeAxisLength > 94.82m) && (HingeAxisLength <= 112.54m))
                 {
                     part = new Part(1975, "Middle Extension", m_parent, 1, 1.0m);
-                    part.PartGroupType = "Hardware-Parts";                    
+                    part.PartGroupType = "Hardware";                    
                     part.PartName = "Mid Extension Mid";
                     part.PartLabel = "";                                       
                     m_parts.Add(part);
@@ -298,7 +296,7 @@ namespace FrameWorks.Makes.System3000
                 else if ((HingeAxisLength > 112.54m) && (HingeAxisLength <= 130.75m))
                 {
                     part = new Part(1976, "Middle Extension", m_parent, 1, 1.0m);
-                    part.PartGroupType = "Hardware-Parts";                   
+                    part.PartGroupType = "Hardware";                   
                     part.PartName = "Mid Extension Large";
                     part.PartLabel = "";                                       
                     m_parts.Add(part);
@@ -312,7 +310,7 @@ namespace FrameWorks.Makes.System3000
             #region Gear
 
             part = new Part(1776, "Multipoint Gear", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";         
+            part.PartGroupType = "Hardware";         
             part.PartName = "Gear";
             part.PartLabel = "";          
             m_parts.Add(part);
@@ -386,7 +384,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 43.307m) && (HingeAxisLength <= 52.362m))
             {
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -394,7 +392,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 52.362m) && (HingeAxisLength <= 61.417m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartLabel = "";
                 m_parts.Add(part);
 
@@ -403,12 +401,12 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 61.417m) && (HingeAxisLength <= 70.472m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";               
+                part.PartGroupType = "Hardware";               
                 part.PartLabel = "";
                 m_parts.Add(part);
                                                                                                                  
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";              
+                part.PartGroupType = "Hardware";              
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -416,7 +414,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 70.472m) && (HingeAxisLength <= 79.527m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 2, 1.0m);
-                part.PartGroupType = "Hardware-Parts";                
+                part.PartGroupType = "Hardware";                
                 part.PartLabel = "";
                 m_parts.Add(part);
 
@@ -425,12 +423,12 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 79.527m) && (HingeAxisLength <= 88.582m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 2, 1.0m);
-                part.PartGroupType = "Hardware-Parts";              
+                part.PartGroupType = "Hardware";              
                 part.PartLabel = "";
                 m_parts.Add(part);
 
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -438,7 +436,7 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 88.582m) && (HingeAxisLength <= 97.637m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 3, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -447,20 +445,20 @@ namespace FrameWorks.Makes.System3000
             {
                // throw HardwareApplicationError("Sash Hieght Exceed Hardware Specs");
                 part = new Part(2285, "Linkage460", m_parent, 3, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "EXCEEDSMAXHEIGHT";
                 m_parts.Add(part);
             }
            
             //Multipoint Set for 23.465 <<>> 43.307
             part = new Part(2719, "MultiCaseGear", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
             //TopShootBolt
             part = new Part(2283, "TopShootBolt", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
@@ -472,13 +470,9 @@ namespace FrameWorks.Makes.System3000
 
             #endregion
 
-
-
         }
 
     }
-
-
 
     public class HoppeCasement45mm
     {
@@ -522,7 +516,6 @@ namespace FrameWorks.Makes.System3000
             get { return m_parts; }
         }
 
-
         private void Build(decimal HingeAxisLength)
         {
 
@@ -532,14 +525,12 @@ namespace FrameWorks.Makes.System3000
             {
 
                 throw HardwareApplicationError("Casement exceeds Minumum Size");
-
-
             }
 
             else if ((HingeAxisLength > 43.307m) && (HingeAxisLength <= 52.362m))
             {
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -547,21 +538,20 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 52.362m) && (HingeAxisLength <= 61.417m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
-
             }
 
             else if ((HingeAxisLength > 61.417m) && (HingeAxisLength <= 70.472m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
 
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -569,21 +559,20 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 70.472m) && (HingeAxisLength <= 79.527m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 2, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
-
             }
 
             else if ((HingeAxisLength > 79.527m) && (HingeAxisLength <= 88.582m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 2, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
 
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -591,54 +580,44 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 88.582m) && (HingeAxisLength <= 97.637m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 3, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
 
             else if (HingeAxisLength > 97.637m)
-            {
-                
-                
+            {                               
                 part = new Part(2285, "Linkage460", m_parent, 3, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "EXCEEDSMAXHEIGHT";
                 m_parts.Add(part);
-                
-                
-                
-                
+                                                              
                 //throw HardwareApplicationError("Sash Hieght Exceed Hardware Specs");
             }
 
             //Multipoint Set for 23.465 <<>> 43.307
             part = new Part(2282, "MultiCaseGear", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
             //TopShootBolt
             part = new Part(2283, "TopShootBolt", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
             //BottomReverseBolt
             part = new Part(2284, "BotRevBolt", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
             #endregion
 
-
-
         }
 
     }
-
-
-
 
     public class HoppeCasement25mm
     {
@@ -682,7 +661,6 @@ namespace FrameWorks.Makes.System3000
             get { return m_parts; }
         }
 
-
         private void Build(decimal HingeAxisLength)
         {
 
@@ -690,16 +668,13 @@ namespace FrameWorks.Makes.System3000
             //Minimum is 23.465
             if (HingeAxisLength < 23.0m)
             {
-
                 throw HardwareApplicationError("Casement exceeds Minumum Size");
-
-
             }
 
             else if ((HingeAxisLength > 43.307m) && (HingeAxisLength <= 52.362m))
             {
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -707,21 +682,20 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 52.362m) && (HingeAxisLength <= 61.417m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
-
             }
 
             else if ((HingeAxisLength > 61.417m) && (HingeAxisLength <= 70.472m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
 
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -729,21 +703,20 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 70.472m) && (HingeAxisLength <= 79.527m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 2, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
-
             }
 
             else if ((HingeAxisLength > 79.527m) && (HingeAxisLength <= 88.582m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 2, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
 
                 part = new Part(2286, "Linkage230", m_parent, 1, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
@@ -751,53 +724,43 @@ namespace FrameWorks.Makes.System3000
             else if ((HingeAxisLength > 88.582m) && (HingeAxisLength <= 97.637m))
             {
                 part = new Part(2285, "Linkage460", m_parent, 3, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "";
                 m_parts.Add(part);
             }
 
             else if (HingeAxisLength > 97.637m)
             {
-
-
                 part = new Part(2285, "Linkage460", m_parent, 3, 1.0m);
-                part.PartGroupType = "Hardware-Parts";
+                part.PartGroupType = "Hardware";
                 part.PartLabel = "EXCEEDSMAXHEIGHT";
                 m_parts.Add(part);
-
-
-
 
                 //throw HardwareApplicationError("Sash Hieght Exceed Hardware Specs");
             }
 
             //Multipoint Set for 23.465 <<>> 43.307
             part = new Part(2719, "MultiCaseGear", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
             //TopShootBolt
             part = new Part(2283, "TopShootBolt", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
             //BottomReverseBolt
             part = new Part(2284, "BotRevBolt", m_parent, 1, 1.0m);
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.PartLabel = "";
             m_parts.Add(part);
 
             #endregion
 
-
-
         }
 
     }
-
-
-
 
 }

@@ -49,6 +49,7 @@ namespace FrameWorks
     public class BridgeGenie
    {
         public  List<decimal> result = new List<decimal>();
+        public List<int> Clips = new List<int>();
         public BridgeGenie(decimal DoorThickness)
         {
             if (DoorThickness == 2.25m)
@@ -61,6 +62,13 @@ namespace FrameWorks
                 result.Add(13.625m);
                 result.Add(16.5m);
 
+                Clips.Add(5434);
+                Clips.Add(5583);
+                Clips.Add(5584);
+                Clips.Add(5585);
+                Clips.Add(5586);
+                Clips.Add(911);
+
             }
 
             else if (DoorThickness == 2.5m)
@@ -72,6 +80,16 @@ namespace FrameWorks
                 result.Add(11.5m);
                 result.Add(14.625m);
                 result.Add(17.75m);
+
+                // Just add the proper Part-numbers for the clips
+
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
+
             }
 
 
@@ -84,6 +102,15 @@ namespace FrameWorks
                 result.Add(8.5m);
                 result.Add(10.625m);
                 result.Add(12.75m);
+
+                // Just add the proper Part-numbers for the clips
+
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
+                Clips.Add(911);
 
             }
 
@@ -155,22 +182,25 @@ public class Functions
    {
       int result = 0;
 
-      if ((HingeAxisLength >= 42.0m) && (HingeAxisLength < 80.0m))
+      if ((HingeAxisLength >= 24.0m) && (HingeAxisLength < 48.01m))
       {
-         result = 2;
+          result = 2;
       }
-      else if ((HingeAxisLength >= 80.0m) && (HingeAxisLength < 84.0m))
+      if ((HingeAxisLength >= 48.02m) && (HingeAxisLength < 84.01m))
       {
          result = 3;
       }
-      else if ((HingeAxisLength >= 84.0m) && (HingeAxisLength <= 120.0m))
+      else if ((HingeAxisLength >= 84.02m) && (HingeAxisLength < 108.01m))
       {
          result = 4;
       }
-      else if (HingeAxisLength > 120.0m)
+      else if ((HingeAxisLength >= 108.02m) && (HingeAxisLength <= 134.01m))
       {
          result = 5;
-
+      }
+      else if (HingeAxisLength > 134.02m)
+      {
+         result = 6;
       }
 
       return result;
@@ -261,10 +291,6 @@ public class Functions
       
        return result;
 
-
-
-
-
    }
 
 
@@ -275,7 +301,6 @@ public class Functions
        double radians = angle * (Math.PI / 180);
        result = Convert.ToDecimal(radius * radians); 
 
-
     return result;
 
    }
@@ -285,7 +310,7 @@ public class Functions
    {
        int result = 0;
 
-       if (UnitWidth < 16.8201m  || UnitWidth < 40.0m)
+       if (UnitWidth < 16.8201m  || UnitWidth < 48.01m)
        {
            if (UnitWidth >= 16.8201m  && UnitWidth < 18.8201m)
            {
@@ -310,7 +335,7 @@ public class Functions
                    result = 2775;
                } 
            }
-           else if (UnitWidth >= 22.8201m && UnitWidth < 40.0m)
+           else if (UnitWidth >= 22.8201m && UnitWidth < 48.01m)
            {
                if (string.Equals(handing , "RH"))
                {
@@ -337,7 +362,7 @@ public class Functions
    {
        int result = 0;
 
-       if (UnitWidth > 16.8201m && UnitWidth < 40.0m)
+       if (UnitWidth > 16.8201m && UnitWidth < 42.01m)
        {
 
        if (UnitWidth >= 16.8201m && UnitWidth < 18.8201m)
@@ -347,7 +372,7 @@ public class Functions
           result = 2630;
 
        }
-           else if (UnitWidth >= 18.8201m && UnitWidth <= 40.0m)
+           else if (UnitWidth >= 18.8201m && UnitWidth <= 42.01m)
            {
               
                    result = 2745;
@@ -376,7 +401,7 @@ public class Functions
         {
             if (UnitWidth > 16.124m && UnitWidth <= 27.0m)
                 {
-                    result[0] = 990;
+                    result[0] = 6917;
                     result[1] = 3134;
                     result[2] = 3134;
                 }
@@ -384,14 +409,14 @@ public class Functions
                 
                 else if (UnitWidth > 27.0m && UnitWidth <= 29.0m)
                 {
-                    result[0] = 3039;
+                    result[0] = 2902;
                     result[1] = 3139;
                     result[2] = 3139;
                 }
 
                 else if (UnitWidth > 29.0m && UnitWidth <= 60.0m)
                 {
-                    result[0] = 3038;
+                    result[0] = 6918;
                     result[1] = 3120;
                     result[2] = 3120;
                 }

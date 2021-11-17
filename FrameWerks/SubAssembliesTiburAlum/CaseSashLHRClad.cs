@@ -369,14 +369,11 @@ namespace FrameWorks.Makes.TiburAlum
             // SashKeepers
             for (int i = 0; i < 2; i++)
             {
-
-
                 part = new Part(3516, "SashKeepers", this, 1, 0.0m);
                 part.PartGroupType = "Hardware-Parts";
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = "";
-
                 m_parts.Add(part);
 
             }

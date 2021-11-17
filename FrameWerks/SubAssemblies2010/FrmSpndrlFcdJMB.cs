@@ -65,71 +65,25 @@ namespace FrameWorks.Makes.System2010
             Part part;
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
-
-
             #region FrameAlum
 
             //////////////////////////////////////////////////////////////////////////////
 
             // BaseFrameVert
-            for (int i = 0; i < 2; i++)
-            {
-            part = new Part(4360, "BaseFrameVert", this, 1, m_subAssemblyHieght - baseReducex2);
-            part.PartGroupType = "FrameAlum-Parts";
-            part.PartWidth = part.Source.Width;
-            part.PartThick = part.Source.Height;
+            part = new Part(4360, "BaseFrameVert", this, 2, m_subAssemblyHieght - baseReducex2);
+            part.PartGroupType = "FrameAlum";
             part.PartLabel = "BaseV";
-
             m_parts.Add(part);
 
-            }
-
             //////////////////////////////////////////////////////////////////////////////
-
-            // BaseFrameHorz
-            //for (int i = 0; i < 2; i++)
-            //{
-                //part = new Part(4360, "BaseFrameHorz", this, 1, m_subAssemblyWidth - baseReducex2);
-                //part.PartGroupType = "FrameAlum-Parts";
-                //part.PartWidth = part.Source.Width;
-                //part.PartThick = part.Source.Height;
-                //part.PartLabel = "BaseH";
-
-                //m_parts.Add(part);
-
-            //}
-
-            ////////////////////////////////////////////////////////////////////////////////
 
             // ClampVert
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4359, "ClampVert", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "FrameAlum-Parts";
-            part.PartWidth = part.Source.Width;
-            part.PartThick = part.Source.Height;
-            part.PartLabel = "BaseV";
-
+            part = new Part(4359, "ClampVert", this, 2, m_subAssemblyHieght);
+            part.PartGroupType = "FrameAlum";
+            part.PartLabel = "BaseV";         
             m_parts.Add(part);
 
-            }
-
             //////////////////////////////////////////////////////////////////////////////
-
-            // ClampHorz
-            //for (int i = 0; i < 2; i++)
-            //{
-                //part = new Part(4356, "ClampHorz", this, 1, m_subAssemblyWidth);
-                //part.PartGroupType = "FrameAlum-Parts";
-                //part.PartWidth = part.Source.Width;
-                //part.PartThick = part.Source.Height;
-                //part.PartLabel = "BaseH";
-
-                //m_parts.Add(part);
-
-            //}
-
-            ////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -141,13 +95,9 @@ namespace FrameWorks.Makes.System2010
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(4358, "CapVt", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "CapAlum-Parts";
-            part.PartWidth = part.Source.Width;
-            part.PartThick = part.Source.Height;
-            part.PartLabel = "";
-
-            m_parts.Add(part);
-
+                part.PartGroupType = "CapAlum-Parts";
+                part.PartLabel = "";
+                m_parts.Add(part);
             }
 
             //////////////////////////////////////////////////////////////////////////////
@@ -155,26 +105,24 @@ namespace FrameWorks.Makes.System2010
             //CapHz  
             //for (int i = 0; i < 2; i++)
             //{
-                //part = new Part(4344, "CapHz", this, 1, m_subAssemblyWidth - capReduceX2);
-                //part.PartGroupType = "CapAlum-Parts";
-                //part.PartWidth = part.Source.Width;
-                //part.PartThick = part.Source.Height;
-                //part.PartLabel = "";
+            //part = new Part(4344, "CapHz", this, 1, m_subAssemblyWidth - capReduceX2);
+            //part.PartGroupType = "CapAlum-Parts";
+            //part.PartWidth = part.Source.Width;
+            //part.PartThick = part.Source.Height;
+            //part.PartLabel = "";
 
-                //m_parts.Add(part);
+            //m_parts.Add(part);
 
             //}
 
-            ////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
-
-
-
 
         }
 
         #endregion
 
     }
+
 }

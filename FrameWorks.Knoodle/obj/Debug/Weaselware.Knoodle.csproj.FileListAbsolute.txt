@@ -52,3 +52,54 @@ C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\Fr
 C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.GenerateResource.Cache
 C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.dll.config
 C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.CoreCompileInputs.cache
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.exe.config
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.exe
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.pdb
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.pdb
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.dll.config
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csprojAssemblyReference.cache
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.ClassNameFinder.resources
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.Form1.resources
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.PartEditor.resources
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.ProjectEdit.resources
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.Properties.Resources.resources
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.GenerateResource.cache
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.CoreCompileInputs.cache
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.CopyComplete
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\ChangeConnection.exe
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\ChangeConnection.pdb
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.exe.config
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.exe
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.pdb
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.pdb
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.dll.config
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csprojAssemblyReference.cache
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.ClassNameFinder.resources
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.Form1.resources
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.PartEditor.resources
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.ProjectEdit.resources
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.Properties.Resources.resources
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.GenerateResource.cache
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.CoreCompileInputs.cache
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.CopyComplete
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\ChangeConnection.exe
+C:\Users\Don\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\ChangeConnection.pdb
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.exe.config
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.exe
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\ChangeConnection.pdb
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.pdb
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\bin\Debug\FrameWorks.dll.config
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.AssemblyReference.cache
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.ClassNameFinder.resources
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.Form1.resources
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.PartEditor.resources
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.ProjectEdit.resources
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.Properties.Resources.resources
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.GenerateResource.cache
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.CoreCompileInputs.cache
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\ChangeConnection.exe
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\ChangeConnection.pdb
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWorks.Knoodle\obj\Debug\Weaselware.Knoodle.csproj.CopyComplete

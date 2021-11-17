@@ -70,33 +70,23 @@ namespace FrameWorks.Makes.System3090
 
             #region Frame-Parts
 
+            //////////////////////////////////////////////////////////////////////////////
 
             // JamBrz
+            part = new Part(4306, "JamBrz", this, 2, m_subAssemblyHieght);
+            part.PartGroupType = "Frame-Parts";
+            part.PartLabel = "1)MiterEnds";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 2; i++)
-            {
-
-                part = new Part(4306, "JamBrz", this, 1, m_subAssemblyHieght);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "1)MiterEnds";
-
-                m_parts.Add(part);
-
-            }
+            //////////////////////////////////////////////////////////////////////////////
 
             // HeadSillBrz
+            part = new Part(4306, "HeadSillBrz", this, 2, m_subAssemblyWidth);
+            part.PartGroupType = "Frame-Parts";
+            part.PartLabel = "1)MiterEnds";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 2; i++)
-            {
-
-                part = new Part(4306, "HeadSillBrz", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "1)MiterEnds";
-
-                m_parts.Add(part);
-
-            }
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -104,33 +94,23 @@ namespace FrameWorks.Makes.System3090
 
             //////////////////////////////////////////////////////////////////////////////
 
-            // BrzCnrBrkt
-            for (int i = 0; i < 8; i++)
-            {
-                part = new Part(4265, "BrzCnrBrkt", this, 1, bronzeCrnBrk);
-                part.PartGroupType = "AsemblHrdwr-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
+            // BrzCnrBrkt   
+            part = new Part(4265, "BrzCnrBrkt", this, 8, bronzeCrnBrk);
+            part.PartGroupType = "AsemblHrdwr-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
+        
             //////////////////////////////////////////////////////////////////////////////
 
             // SetSocScrew_1/4-20x1/4
-            for (int i = 0; i < 32; i++)
-            {
-                part = new Part(1545, "SetSocScrew_1/4-20x1/4", this, 1, 0.0m);
-                part.PartGroupType = "AsemblHrdwr-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(1545, "SetSocScrew_1/4-20x1/4", this, 32, 0.0m);
+            part.PartGroupType = "AsemblHrdwr-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
@@ -138,23 +118,18 @@ namespace FrameWorks.Makes.System3090
 
             #region Seal/Weatherstripping
 
-
             decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyWidth);
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             for (int i = 0; i < 1; i++)
             {
-
                 peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyWidth);
-
                 //FrameSealKfolD
                 part = new Part(2274, "FrameSealKfolD", this, 1, peri);
                 part.PartGroupType = "Seal-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -162,7 +137,6 @@ namespace FrameWorks.Makes.System3090
             #endregion
 
         }
-
 
 #endregion
 

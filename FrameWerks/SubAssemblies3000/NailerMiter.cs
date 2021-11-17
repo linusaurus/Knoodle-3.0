@@ -60,68 +60,57 @@ namespace FrameWorks.Makes.System3000
 
             Part part;
             
-
             #region Nail Fin Perimeter
-
 
             // Top Nailer ^^
             part = new Part(922, "Top Nail Fin", this, 1, m_subAssemblyWidth + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Bot Nailer ||
             part = new Part(922, "Bottom Nail Fin", this, 1, m_subAssemblyWidth + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Left Nailer <<--
             part = new Part(922, "Left Nail Fin", this, 1, m_subAssemblyHieght + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Right Nailer -->>
             part = new Part(922, "Right Nail Fin", this, 1, m_subAssemblyHieght + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Top Miter Nailer ^^
             part = new Part(922, "Top M1 Nail Fin", this, 1, m_subAssemblyDepth + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Bot Miter Nailer ||
             part = new Part(922, "Bottom M1 Nail Fin", this, 1, m_subAssemblyDepth + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Top Miter Nailer ^^
             part = new Part(922, "Top M2 Nail Fin", this, 1, m_subAssemblyDepth + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Bot Miter Nailer ||
             part = new Part(922, "Bottom M2 Nail Fin", this, 1, m_subAssemblyDepth + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
+
             #endregion
-
-
 
             #region Labor
 
@@ -131,13 +120,10 @@ namespace FrameWorks.Makes.System3000
 
             #endregion
 
-
         }
-
-
 
         #endregion
 
-
     }
+
 }

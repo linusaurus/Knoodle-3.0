@@ -82,6 +82,7 @@ namespace FrameWorks.Makes.Hardware.Amesbury40.Premiere2000
 
             #region TopShootTipLogic
 
+            ///////////////////////////////////////////////////////////////////////////
 
             //MP_ShootTip
             part = new Part(3865, "MP_TopShootTip", m_parent, 1, 1.0m);
@@ -90,7 +91,7 @@ namespace FrameWorks.Makes.Hardware.Amesbury40.Premiere2000
             part.PartLabel = "";
             m_parts.Add(part);
 
-            /////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -145,19 +146,21 @@ namespace FrameWorks.Makes.Hardware.Amesbury40.Premiere2000
 
             #region MP_GearActive
 
-            part = new Part(4112, "MP_GearActive", m_parent, 1, 1.0m);
+            ///////////////////////////////////////////////////////////////////////////
+
+            part = new Part(5540, "MP_GearActive", m_parent, 1, 1.0m);
             part.PartGroupType = "Hardware-Parts";
             part.PartName = "8045-2094-81-LA-EC";
             part.PartLabel = "";
             m_parts.Add(part);
 
-
-
+            ///////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region BottomShootTipLogic
 
+            ///////////////////////////////////////////////////////////////////////////
 
             //MP_ShootTip
             part = new Part(3865, "MP_BotShootTip", m_parent, 1, 1.0m);
@@ -166,9 +169,7 @@ namespace FrameWorks.Makes.Hardware.Amesbury40.Premiere2000
             part.PartLabel = "";
             m_parts.Add(part);
 
-            /////////////////////////////////////////////////////
-
-
+            ///////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -277,7 +278,6 @@ namespace FrameWorks.Makes.Hardware.Amesbury40.Premiere2000
                     part.PartName = "16-2071UA";
                     part.PartLabel = "";
                     m_parts.Add(part);
-
                 }
 
             }
@@ -287,19 +287,15 @@ namespace FrameWorks.Makes.Hardware.Amesbury40.Premiere2000
 
             #region MP_GearPassive
 
-            part = new Part(4113, "MP_GearPassive", m_parent, 1, 1.0m);
+            part = new Part(5541, "MP_GearPassive", m_parent, 1, 1.0m);
             part.PartGroupType = "Hardware-Parts";
             part.PartName = "8545-2074-81-LA-EC";
             part.PartLabel = "";
             m_parts.Add(part);
 
-
-
-
             #endregion
 
             #region BottomShootTipLogic
-
 
             //MP_ShootTip
             part = new Part(3865, "MP_BotShootTip", m_parent, 1, 1.0m);
@@ -309,8 +305,6 @@ namespace FrameWorks.Makes.Hardware.Amesbury40.Premiere2000
             m_parts.Add(part);
 
             /////////////////////////////////////////////////////
-
-
 
             #endregion
 

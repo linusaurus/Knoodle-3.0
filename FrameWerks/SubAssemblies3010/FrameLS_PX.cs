@@ -84,21 +84,17 @@ namespace FrameWorks.Makes.System3010
             Part part;
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
-
-
             #region TopTrackY
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
             //TopTrackYX
             part = new Part(3406, "TopTrackYX", this, 1, (trackHelper.DoorPanelWidth * 2.0m) - jambInset + doorGap + yTrackPocket);
             part.PartGroupType = "TopTrackY-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
-
 
             #endregion
 
@@ -107,57 +103,34 @@ namespace FrameWorks.Makes.System3010
             //////////////////////////////////////////////////////////////////////////////
 
             // SpltJambStrike -->> 
-            for (int i = 0; i < 2; i++)
-            {
-
-
-                part = new Part(4363, "SpltJambStrike", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4363, "SpltJambStrike", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             // SplitJambPocket -->> 
-            for (int i = 0; i < 2; i++)
-            {
-
-
-                part = new Part(4363, "SplitJambPocket", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4363, "SplitJambPocket", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             // SplitHead ^^
-            for (int i = 0; i < 2; i++)
-            {
+            part = new Part(4364, "SplitHead", this, 2, m_subAssemblyWidth - jambWide2X);
+            part.PartGroupType = "Frame-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                part = new Part(4364, "SplitHead", this, 1, m_subAssemblyWidth - jambWide2X);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region HDPE_Head
 
-
-
             //////////////////////////////////////////////////////////////////////////////
-
 
             string notchHDPE = string.Empty;
             decimal[] temp = new decimal[panelCount + 1];
@@ -200,9 +173,10 @@ namespace FrameWorks.Makes.System3010
 
             }
 
+            //////////////////////////////////////////////////////////////////////////////
+
             // notchHDPE 
             decimal HDPEnotch = trackHelper.DoorPanelWidth + headHDPEadd + notchHDPEadd;
-
 
             // HDPEHead ^^
             part = new Part(3454, "HDPE_Head", this, 1, (trackHelper.DoorPanelWidth * 2.0m ) - jambInset + yTrackPocket + headHDPEadd);
@@ -210,22 +184,16 @@ namespace FrameWorks.Makes.System3010
             part.PartLabel = "";
             part.PartThick = 0.75m;
             part.PartWidth = 2.875m;
-
             m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
-
-
             #endregion
 
-
         }
-
 
         #endregion
 
     }
-
 
 }

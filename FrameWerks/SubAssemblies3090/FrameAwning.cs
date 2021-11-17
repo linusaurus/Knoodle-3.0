@@ -83,13 +83,8 @@ namespace FrameWorks.Makes.System3090
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
-
-            //////////////////////////////////////////////////////////////////////////////
-
 
             //////////////////////////////////////////////////////////////////////////////
 
@@ -101,13 +96,10 @@ namespace FrameWorks.Makes.System3090
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             ////////////////////////////////////////////////////////////////////////////////
-
 
             #endregion
 
@@ -116,35 +108,27 @@ namespace FrameWorks.Makes.System3090
             //////////////////////////////////////////////////////////////////////////////
    
             // ScreenBrzR -->>
-
             //part = new Part(4429, "ScreenBrzR", this, 1, m_subAssemblyHieght - screenReduce2X);
             //part.PartGroupType = "Frame-Parts";
             //part.PartLabel = "1)MiterEnds";
-
             //m_parts.Add(part);
 
             // ScreenBrzL <<-- 
-
             //part = new Part(4429, "ScreenBrzL", this, 1, m_subAssemblyHieght - screenReduce2X);
             //part.PartGroupType = "Frame-Parts";
             //part.PartLabel = "1)MiterEnds";
-
             //m_parts.Add(part);
 
             // ScreenBrz ^^
-
             //part = new Part(4429, "ScreenBrzHd", this, 1, m_subAssemblyWidth - screenReduce2X);
             //part.PartGroupType = "Frame-Parts";
             //part.PartLabel = "1)MiterEnds";
-
             //m_parts.Add(part);
 
             // ScreenBrz ||
-
             //part = new Part(4429, "ScreenBrzSl", this, 1, m_subAssemblyWidth - screenReduce2X);
             //part.PartGroupType = "Frame-Parts";
             //part.PartLabel = "1)MiterEnds";
-
             //m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
@@ -156,32 +140,22 @@ namespace FrameWorks.Makes.System3090
             //////////////////////////////////////////////////////////////////////////////
 
             // BrzCnrBrkt
-            for (int i = 0; i < 8; i++)
-            {
-                part = new Part(4265, "BrzCnrBrkt", this, 1, bronzeCrnBrk);
-                part.PartGroupType = "AsemblHrdwr-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4265, "BrzCnrBrkt", this, 8, bronzeCrnBrk);
+            part.PartGroupType = "AsemblHrdwr-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             // SetSocScrew_1/4-20x1/4
-            for (int i = 0; i < 32; i++)
-            {
-                part = new Part(1545, "SetSocScrew_1/4-20x1/4", this, 1, 0.0m);
-                part.PartGroupType = "AsemblHrdwr-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(1545, "SetSocScrew_1/4-20x1/4", this, 32, 0.0m);
+            part.PartGroupType = "AsemblHrdwr-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ////////////////////////////////////////////////////////////////////////////////
 
@@ -195,7 +169,6 @@ namespace FrameWorks.Makes.System3090
             part = new Part(5096, "OperatorEncoreAwning", this, 1, 0.0m);
             part.PartGroupType = "OperHardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -204,7 +177,6 @@ namespace FrameWorks.Makes.System3090
             part = new Part(5253, "OperatorBacker", this, 1, 0.0m);
             part.PartGroupType = "OperHardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -213,13 +185,12 @@ namespace FrameWorks.Makes.System3090
 
             #region Seal/Weatherstripping
 
-
             decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght - gasketReduce, m_subAssemblyWidth - gasketReduce);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
             for (int i = 0; i < 1; i++)
             {
-
                 peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght - gasketReduce, m_subAssemblyWidth - gasketReduce);
 
                 //FrameSeal
@@ -230,11 +201,10 @@ namespace FrameWorks.Makes.System3090
                 m_parts.Add(part);
 
             }
+           
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
             #endregion
-
 
         }
 

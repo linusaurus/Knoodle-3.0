@@ -42,10 +42,6 @@ namespace FrameWorks.Makes.System5010
 
         //Constant Values
         
-
-
-
-
         #endregion
 
         #region Constructor
@@ -78,29 +74,21 @@ namespace FrameWorks.Makes.System5010
 
             #region NailFin
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+
             // NailerWidthExt
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4501, "NailerWidthExt", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "NailFin-Parts";
-                part.PartLabel = "1)MiterEnds";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4501, "NailerWidthExt", this, 1, m_subAssemblyWidth);
+            part.PartGroupType = "NailFin";
+            part.PartLabel = "1)MiterEnds";
+            m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////
 
             //NailerVertExt
-            //for (int i = 0; i < 2; i++)
-            //{
             //part = new Part(4501, "NailerVertExt", this, 1, m_subAssemblyHieght + nailFinAd * 2.0m);
-            //part.PartGroupType = "NailFin-Parts";
+            //part.PartGroupType = "NailFin";
             //part.PartLabel = "1)MiterEnds";
-
             //m_parts.Add(part);
-
-            //}
 
             //////////////////////////////////////////////////////////////////////////////////////////
 

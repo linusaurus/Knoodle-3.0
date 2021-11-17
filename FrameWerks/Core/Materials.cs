@@ -49,20 +49,22 @@ namespace FrameWorks
       
       public static void Load(bool usePartLibrary)
       {
-         string ConString = @"Password=Kx09a32x;Persist Security Info=True;User ID=sa;Initial Catalog=badger;Data Source=192.168.10.3";
+         //string ConString = @"Password=Kx09a32x;Persist Security Info=True;User ID=sa;Initial Catalog=badger;Data Source=192.168.10.3";
+
+          string ConString = "data source=FILE-SERVER;initial catalog = Mosaic; persist security info = True;Integrated Security = SSPI";  
         // string ConString = connectionString;
          SqlConnection con = new SqlConnection(ConString);
         
          SqlCommand  cmd = con.CreateCommand();
-         cmd.CommandText = @"select partid,
-                                    itemname,
-                                    itemdescription,
-                                    cost,
-                                    UID,
+         cmd.CommandText = @"select PartID,
+                                    ItemName,
+                                    ItemDescription,
+                                    Cost,
+                                    UnitOfMeasureID,
                                     Weight,
                                     Waste,
-                                    Markup,
-                                    SupplierID FROM Part";
+                                    Markup
+                                    FROM Part";
          con.Open();
          SqlDataReader  reader = cmd.ExecuteReader();
 
@@ -88,7 +90,7 @@ namespace FrameWorks
             // Markup
             if (!reader.IsDBNull(7)) material.MarkUp = reader.GetDecimal(7);
             // SupplierID 
-            if (!reader.IsDBNull(8)) material.SupplierID  = reader.GetInt32 (8);
+           // if (!reader.IsDBNull(8)) material.SupplierID  = reader.GetInt32 (8);
  
             m_partSource.Add(reader.GetInt32(0), material);
 

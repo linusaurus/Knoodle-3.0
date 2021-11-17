@@ -36,7 +36,7 @@ namespace FrameWorks.Makes.System3000
    
    public class JeffersonCalc 
    {
- 
+    
     readonly decimal RAIL_WIDTH = 2.064m;
     readonly decimal MULLION_WIDTH = 1.0m;
     readonly decimal AWNING_LAP = 1.0m * 2.0m;
@@ -112,8 +112,6 @@ namespace FrameWorks.Makes.System3000
       }
 
       
-      
-     
-   
    }
+
 }

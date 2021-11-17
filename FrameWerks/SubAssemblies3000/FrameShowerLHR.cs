@@ -74,53 +74,45 @@ namespace FrameWorks.Makes.System3000
             partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
 
-
             #region Jamb-Frame
-
 
             // JambLeft <<--
             part = new Part(1167, "JambLeft", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Jamb-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Jamb";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region DoorStop
 
-
-            part = new Part(2990, "DoorStop-Top", this, 1, m_subAssemblyWidth + (2.0m * 1.3125m));
-            part.PartGroupType = "DoorStop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            // DoorStopT
+            part = new Part(2990, "DoorStopT", this, 1, m_subAssemblyWidth + (2.0m * 1.3125m));
+            part.PartGroupType = "DoorStop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
 
-            part = new Part(2990, "DoorStop-Left", this, 1, m_subAssemblyHieght + (1.0m * 1.3125m));
+            // DoorStopL
+            part = new Part(2990, "DoorStopL", this, 1, m_subAssemblyHieght + (1.0m * 1.3125m));
             part.PartGroupType = "DoorStop-Parts";
-            part.PartLabel = "Miter Top";
-            
+            part.PartLabel = "Miter Top";            
             m_parts.Add(part);
 
-            part = new Part(2990, "DoorStop-Right", this, 1, m_subAssemblyHieght + (1.0m * 1.3125m));
+            // DoorStopR
+            part = new Part(2990, "DoorStopR", this, 1, m_subAssemblyHieght + (1.0m * 1.3125m));
             part.PartGroupType = "DoorStop-Parts";
-            part.PartLabel = "Miter Top";
-            
+            part.PartLabel = "Miter Top";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region CapBronze
 
-
+            //CapBronze
             part = new Part(2972, "CapBronze-Jamb", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "CapBronzeJamb-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "CapBronze";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
@@ -138,11 +130,10 @@ namespace FrameWorks.Makes.System3000
             m_parts.Add(part);;
             // .0005 hours + 0.05 Area
 
-
             #endregion
 
         }
 
-
     }
+
 }

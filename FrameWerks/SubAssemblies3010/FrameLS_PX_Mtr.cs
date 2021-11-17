@@ -82,21 +82,17 @@ namespace FrameWorks.Makes.System3010
             Part part;
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
-
-
             #region TopTrackY
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
             //TopTrackYX
             part = new Part(3406, "TopTrackYX", this, 1, m_subAssemblyWidth * 2.0m + yTrackPocket );
             part.PartGroupType = "TopTrackY-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
-
 
             #endregion
 
@@ -105,46 +101,34 @@ namespace FrameWorks.Makes.System3010
             //////////////////////////////////////////////////////////////////////////////
 
             //BzJambPocket -->> 
-            for (int i = 0; i < 2; i++)
-            {
-
-
-                part = new Part(4363, "BzJambPocket", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4363, "BzJambPocket", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
-            // FaciaHeadInt ^^
-            part = new Part(4364, "FaciaHeadInt", this, 1, m_subAssemblyWidth - jambInset);
+            // SplitHeadInt ^^
+            part = new Part(4364, "SplitHeadInt", this, 1, m_subAssemblyWidth - jambInset);
             part.PartGroupType = "Frame-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            ////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
-            // FaciaHeadExt ^^
-            part = new Part(4364, "FaciaHeadExt", this, 1, m_subAssemblyWidth - jambInset + facEndAcc);
+            // SplitHeadExt ^^
+            part = new Part(4364, "SplitHeadExt", this, 1, m_subAssemblyWidth - jambInset + facEndAcc);
             part.PartGroupType = "Frame-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            ////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region HDPE_Head
 
-
-
             //////////////////////////////////////////////////////////////////////////////
-
 
             string notchHDPE = string.Empty;
             decimal[] temp = new decimal[panelCount + 1];
@@ -187,9 +171,10 @@ namespace FrameWorks.Makes.System3010
 
             }
 
+            //////////////////////////////////////////////////////////////////////////////
+
             // notchHDPE 
             decimal HDPEnotch = trackHelper.DoorPanelWidth + headHDPEadd + notchHDPEadd;
-
 
             // HDPEHead ^^
             part = new Part(3454, "HDPE_Head", this, 1, m_subAssemblyWidth * 2.0m + yTrackPocket + stileOverLap);
@@ -197,22 +182,16 @@ namespace FrameWorks.Makes.System3010
             part.PartLabel = "";
             part.PartThick = 0.75m;
             part.PartWidth = 2.875m;
-
             m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
-
-
             #endregion
 
-
         }
-
 
         #endregion
 
     }
-
 
 }

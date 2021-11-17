@@ -63,53 +63,52 @@ namespace FrameWorks.Makes.System3000
 
          #region Frame
 
-
          // JambRight
          part = new Part(804,"JambR",this,1,m_subAssemblyHieght);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts"; 
+         part.PartGroupType = "Frame"; 
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // JambLeft
          part = new Part(804, "JambL", this, 1, m_subAssemblyHieght);
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Head Left
          part = new Part(804,"HeadL",this,1,m_subAssemblyWidth );
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.PartLabel = "Rotated Mitre";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Head Right
          part = new Part(804, "HeadR", this, 1, m_subAssemblyDepth );
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.PartLabel = "Rotated Mitre";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Sill Left
          part = new Part(804,"SillL",this,1,m_subAssemblyWidth );
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.PartLabel = "Rotated Mitre";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Sill Right
          part = new Part(804, "SillR", this, 1, m_subAssemblyDepth );
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.PartLabel = "Rotated Mitre";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Braces
          part = new Part(1114,"Braces",this,16,0.0m);
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
@@ -120,47 +119,46 @@ namespace FrameWorks.Makes.System3000
 
          // StopR
          part = new Part(1114,"StopR",this, 1, m_subAssemblyHieght - (0.625m * 2.0m));
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // StopL
          part = new Part(1114, "StopL", this, 1, m_subAssemblyHieght - (0.625m * 2.0m));
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Stop Top Left
          part = new Part(1114, "Stop-TopL", this, 1, m_subAssemblyHieght - (0.625m ));
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Stop Bottom Left
          part = new Part(1114, "Stop-BotL", this, 1, m_subAssemblyHieght - (0.625m));
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Stop Top Right
          part = new Part(1114, "Stop-TopR", this, 1, m_subAssemblyDepth  - (0.625m));
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // Stop Bottom Right
          part = new Part(1114, "Stop-BotR", this, 1, m_subAssemblyDepth - (0.625m));
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
  
-
          #endregion
 
          #region Spacers
@@ -169,7 +167,7 @@ namespace FrameWorks.Makes.System3000
          //part = new Part(-1,"SpacerL",this,1,);
          part.Qnty = 2;
          part.FunctionalName = "Horizontal Spacer";
-         part.PartGroupType = "Spacers-Parts";
+         part.PartGroupType = "Spacers";
          part.Source.MaterialDescription = "Bronze U-Channel";
          part.PartLabel = "";
          part.Source.MaterialName = "Aluminum";
@@ -183,7 +181,7 @@ namespace FrameWorks.Makes.System3000
          part = new Part(-1);
          part.Qnty = 2;
          part.FunctionalName = "Vertical Spacer";
-         part.PartGroupType = "Spacers-Parts";
+         part.PartGroupType = "Spacers";
          part.Source.MaterialDescription = "Alum U-Channel";
          part.PartLabel = "";
          part.Source.MaterialName = "Aluminum";
@@ -193,20 +191,18 @@ namespace FrameWorks.Makes.System3000
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
-
          #endregion
 
          #region Glass
 
-
          //Glass Panel
          part = new Part(-1);
          part.FunctionalName = "Glass Left";
-         part.PartGroupType = "Glass-Parts";
+         part.PartGroupType = "Glass";
          part.Qnty = 1;
          part.Source.MaterialDescription = "0.5 Insulated Glass";
          part.PartName = "PartName";
-         part.PartLabel = "Phantom Part";
+         part.PartLabel = "Phantom";
          part.Source.MaterialName = "0.5 IGU";
          part.ContainerAssembly = this;
 
@@ -220,11 +216,11 @@ namespace FrameWorks.Makes.System3000
          //Glass Panel
          part = new Part(-1);
          part.FunctionalName = "Glass Right";
-         part.PartGroupType = "Glass-Parts";
+         part.PartGroupType = "Glass";
          part.Qnty = 1;
          part.Source.MaterialDescription = "0.5 Insulated Glass";
          part.PartName = "PartName";
-         part.PartLabel = "Phantom Part";
+         part.PartLabel = "Phantom";
          part.Source.MaterialName = "0.5 IGU";
          part.ContainerAssembly = this;
 
@@ -234,8 +230,6 @@ namespace FrameWorks.Makes.System3000
 
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
-
-
 
          #endregion
 
@@ -273,15 +267,12 @@ namespace FrameWorks.Makes.System3000
          m_parts.Add(part);
           //.5 Load
 
-
          #endregion
 
       }
-
-      
-
+    
       #endregion
 
-
    }
+
 }

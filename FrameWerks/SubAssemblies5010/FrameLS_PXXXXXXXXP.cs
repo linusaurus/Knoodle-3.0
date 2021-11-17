@@ -88,312 +88,222 @@ namespace FrameWorks.Makes.System5010
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
 
-
             #region TopTrackUni
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //TopTrackYPXXXX
             part = new Part(3406, "TopTrackYPXXXX", this, 1, (trackHelper.DoorPanelWidth * 10.0m) - stileOvrLpX6 + pockYtrackAdd + doorGap);
-            part.PartGroupType = "TopTrackUni-Parts";
+            part.PartGroupType = "TopTrackUni";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
-            for (int i = 0; i < 2; i++)
-            {
+            //TopTrackYPXXX
+            part = new Part(3406, "TopTrackYPXXX", this, 1, (trackHelper.DoorPanelWidth * 4.0m) - stileOverLap + pockYtrackAdd + yTrAccess);
+            part.PartGroupType = "TopTrackUni";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                //TopTrackYPXXX
-                part = new Part(3406, "TopTrackYPXXX", this, 1, (trackHelper.DoorPanelWidth * 4.0m) - stileOverLap + pockYtrackAdd + yTrAccess);
-                part.PartGroupType = "TopTrackUni-Parts";
-                part.PartLabel = "";
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
-                m_parts.Add(part);
+            //TopTrackYPXX
+            part = new Part(3406, "TopTrackYPXX", this, 2, (trackHelper.DoorPanelWidth * 3.0m) - stileOverLap + pockYtrackAdd + yTrAccess);
+            part.PartGroupType = "TopTrackUni";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            }
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            for (int i = 0; i < 2; i++)
-            {
+            // TopTrackYPX
+            part = new Part(3406, "TopTrackYPX", this, 2, (trackHelper.DoorPanelWidth * 2.0m) + pockYtrackAdd + yTrAccess);
+            part.PartGroupType = "TopTrackUni";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                //TopTrackYPXX
-                part = new Part(3406, "TopTrackYPXX", this, 1, (trackHelper.DoorPanelWidth * 3.0m) - stileOverLap + pockYtrackAdd + yTrAccess);
-                part.PartGroupType = "TopTrackUni-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-            for (int i = 0; i < 2; i++)
-            {
-
-                // TopTrackYPX
-                part = new Part(3406, "TopTrackYPX", this, 1, (trackHelper.DoorPanelWidth * 2.0m) + pockYtrackAdd + yTrAccess);
-                part.PartGroupType = "TopTrackUni-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region PocketGuides
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // PocketGuide
-            for (int i = 0; i < 8; i++)
-            {
-                part = new Part(5151, "WedgePocketGuide", this, 1, 0.0m);
-                part.PartGroupType = "PocketGuides";
-                part.PartLabel = "";
-                part.PartThick = 0.405m;
-                part.PartWidth = 1.4715m;
-                part.PartLength = 5.0m;
+            part = new Part(5151, "WedgePocketGuide", this, 8, 0.0m);
+            part.PartGroupType = "PocketGuides";
+            part.PartLabel = "";
+            part.PartThick = 0.405m;
+            part.PartWidth = 1.4715m;
+            part.PartLength = 5.0m;
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-            }
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Over_Travel
 
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //OTB_Left
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(5425, "OTB_Left", this, 1, 0.0m);
-                part.PartGroupType = "Over_Travel";
-                part.PartLabel = "";
+            part = new Part(5425, "OTB_Left", this, 3, 0.0m);
+            part.PartGroupType = "Over_Travel";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //OTB_Right
-            for (int i = 0; i < 3; i++)
-            {
-                part = new Part(5426, "OTB_Right", this, 1, 0.0m);
-                part.PartGroupType = "Over_Travel";
-                part.PartLabel = "";
+            part = new Part(5426, "OTB_Right", this, 3, 0.0m);
+            part.PartGroupType = "Over_Travel";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //OTB_Filler
-            for (int i = 0; i < 6; i++)
-            {
-                part = new Part(5271, "OTB_Filler", this, 1, 0.0m);
-                part.PartGroupType = "Over_Travel";
-                part.PartLabel = "";
+            part = new Part(5271, "OTB_Filler", this, 6, 0.0m);
+            part.PartGroupType = "Over_Travel";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region QuadSeal
 
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //QuadSeal
-            for (int i = 0; i < 6; i++)
-            {
-                part = new Part(4910, "QuadSeal", this, 1, 0.0m);
-                part.PartGroupType = "QuadSeal";
-                part.PartLabel = "";
+            part = new Part(4910, "QuadSeal", this, 6, 0.0m);
+            part.PartGroupType = "QuadSeal";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region WoodClad
 
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // WoodCladLSJamb -->> 
-            for (int i = 0; i < 2; i++)
-            {
+            part = new Part(4339, "WoodCladLSJamb", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "WoodClad";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                part = new Part(4339, "WoodCladLSJamb", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "WoodClad-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ///////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // WoodCladLSHead ^^
-            for (int i = 0; i < 1; i++)
-            {
+            part = new Part(4339, "WoodCladLSHead", this, 1, m_subAssemblyWidth - cladRed2X);
+            part.PartGroupType = "WoodClad";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                part = new Part(4339, "WoodCladLSHead", this, 1, m_subAssemblyWidth - cladRed2X);
-                part.PartGroupType = "WoodClad-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Frame
 
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //BzJambPoc -->> 
-            for (int i = 0; i < 2; i++)
-            {
+            part = new Part(4363, "BzJambPoc", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-
-                part = new Part(4363, "BzJambPoc", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //BzJambPoc -->> 
-            for (int i = 0; i < 2; i++)
-            {
+            part = new Part(4363, "BzJambPoc", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-
-                part = new Part(4363, "BzJambPoc", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FaciaHeadInt ^^
             part = new Part(4364, "FaciaHeadInt", this, 1, m_subAssemblyWidth - jambDimW - jambDimW);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FaciaHeadExtXXXX ^^
             part = new Part(4364, "FaciaHeadExtXXXX", this, 1, (trackHelper.DoorPanelWidth) - jambInset - spltHdRed);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
-            ////////////////////////////////////////////////////////////////////////////////
             // FaciaHeadExtXXX ^^
             part = new Part(4364, "FaciaHeadExtXXX", this, 1, (trackHelper.DoorPanelWidth) - jambInset - spltHdRed);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FaciaHeadExtXX ^^
             part = new Part(4364, "FaciaHeadExtXX", this, 1, (trackHelper.DoorPanelWidth) - faceMidoor);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FaciaHeadExtX ^^
             part = new Part(4364, "FaciaHeadExtX", this, 1, (trackHelper.DoorPanelWidth) + faceXdoor - jambInset);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FaciaCapX ^^
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4364, "FaciaCapX", this, 1, faceCapX);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
+            part = new Part(4364, "FaciaCapX", this, 2, faceCapX);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FaciAccess ^^
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4364, "FaciAccess", this, 1, facEndAcc);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
+            part = new Part(4364, "FaciAccess", this, 2, facEndAcc);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FacEndCap ^^
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4364, "FacEndCap", this, 1, facEndCap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
+            part = new Part(4364, "FacEndCap", this, 2, facEndCap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region HDPE_Head
 
-
-
-            //////////////////////////////////////////////////////////////////////////////
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             string notchHDPE = string.Empty;
             decimal[] temp = new decimal[panelCount + 1];
 
             for (int i = 1; i < panelCount; i++)
             {
-
                 switch (i)
                 {
                     case 1:
@@ -414,55 +324,41 @@ namespace FrameWorks.Makes.System5010
                             notchHDPE += temp[3].ToString() + ",";
                             break;
                         }
-
                     default:
                         break;
                 }
-
             }
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // notchHDPE 
             decimal HDPEnotch = trackHelper.DoorPanelWidth + headHDPEadd + notchHDPEadd;
 
-
             // HDPEHead ^^
             part = new Part(3454, "HDPE_Head", this, 1, (trackHelper.DoorPanelWidth * 5.0m) - stileOverLap * 3.0m + pockYtrackAdd + doorGap + headHDPEadd);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "Notch @ " + notchHDPE;
             part.PartThick = 0.75m;
             part.PartWidth = 8.625m;
-
             m_parts.Add(part);
 
-            //////////////////////////////////////////////////////////////////////////////
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // HDPE_Jamb
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4400, "HDPE_Jamb", this, 1, m_subAssemblyHieght - calkGap - reducHDPE);
-                part.PartGroupType = "HDPE_Head-Parts";
-                part.PartLabel = "";
-                part.PartThick = 0.75m;
+            part = new Part(4400, "HDPE_Jamb", this, 2, m_subAssemblyHieght - calkGap - reducHDPE);
+            part.PartGroupType = "HDPE_Head";
+            part.PartLabel = "";
+            part.PartThick = 0.75m;            
+            m_parts.Add(part);
 
-
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
-
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
-
         }
-
 
         #endregion
 
     }
-
 
 }

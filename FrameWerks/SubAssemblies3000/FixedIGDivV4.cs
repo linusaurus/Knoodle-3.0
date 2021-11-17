@@ -61,231 +61,174 @@ namespace FrameWorks.Makes.System3000
             Part part;
             
 
-
-
             #region Frame
-
-
 
             // JambRight -->>
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght;
             part.FunctionalName = "JambR";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // JambLeft <<--
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght;
             part.FunctionalName = "JambL";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
 
             // Head ^^
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth;
             part.FunctionalName = "Head";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
 
             // Sill ||
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth;
             part.FunctionalName = "Sill";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
 
             #endregion
 
             #region Muntin
 
-
-
             // VMuntin
             part = new Part(1859);
             part.Qnty = 6;
-            part.PartGroupType = "Muntin-Parts";
+            part.PartGroupType = "Muntin";
             part.ContainerAssembly = this;
             part.PartLength = (m_subAssemblyHieght - (1.375m * 2.0m)) ;
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "VMuntin";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
 
             #endregion
 
             #region Stop
 
-
             // VStopR
-
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght - (0.625m * 2.0m);
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "VStopR";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
-
             // VStopL
-
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght - (0.625m * 2.0m);
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "VStopL";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
-
             // HStopTop
-
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth - (0.625m * 2.0m);
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "HStopTop";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
-
             // HStopBot
-
             string crap;
             crap = FrameWorks.Functions.StopWeepMachining(m_subAssemblyWidth - 0.0625m * 2.0m);
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth - (0.625m * 2.0m);
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "HStopBot";
             part.PartLabel = "1)MiterEnds" + "\r\n" +
-                             "2)" + crap;
-            
+                             "2)" + crap;            
             m_parts.Add(part);
-
 
             #endregion
 
             #region Glass
 
-
             //GlassPanel1
-
             part = new Part(2828);
             part.FunctionalName = "GlassPanel1";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;           
             part.PartName = "PartName";
             part.PartLabel = "";           
             part.ContainerAssembly = this;
             part.PartWidth = (m_subAssemblyWidth - 2.625m) / 4.0m ;
-            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m)) ;
-            
+            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m)) ;            
             m_parts.Add(part);
-
-
-
 
             //GlassPanel2
-
             part = new Part(2828);
             part.FunctionalName = "GlassPanel2";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = (m_subAssemblyWidth - 2.625m) / 4.0m;
-            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m));
-            
+            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m));            
             m_parts.Add(part);
-
-
-
 
             //GlassPanel3
-
             part = new Part(2828);
             part.FunctionalName = "GlassPanel3";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = (m_subAssemblyWidth - 2.625m) / 4.0m;
-            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m));
-            
+            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m));            
             m_parts.Add(part);
-
-
 
             //GlassPanel4
-
             part = new Part(2828);
             part.FunctionalName = "GlassPanel4";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = (m_subAssemblyWidth - 2.625m) / 4.0m;
-            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m));
-            
+            part.PartLength = (m_subAssemblyHieght - (0.9375m * 2.0m));            
             m_parts.Add(part);
-
 
             #endregion
 
             #region Seal/Weatherstripping
-
 
             decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyDepth);
             peri += FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyWidth);
@@ -294,35 +237,26 @@ namespace FrameWorks.Makes.System3000
 
             //Glazing Seals
             part = new Part(1819, "Glazing Seal", this, 2, peri);
-            part.PartGroupType = "Seal-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Seal";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region Hardware
 
-
             // Braces
             part = new Part(1117);
             part.Qnty = 8;
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.ContainerAssembly = this;
             part.FunctionalName = "Braces";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
-
 
             #endregion
             
                 #region Labor
-
 
             part = new LPart("Design", this, 4.0m, 80.0m);
             m_parts.Add(part);
@@ -356,15 +290,12 @@ namespace FrameWorks.Makes.System3000
             m_parts.Add(part);
             //1 Load
 
-
             #endregion
 
         }
 
-
-
         #endregion
 
-
     }
+
 }

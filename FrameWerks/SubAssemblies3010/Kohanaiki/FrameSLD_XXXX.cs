@@ -80,50 +80,31 @@ namespace FrameWorks.Makes.System3010
 
             #region Tracks
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
             //TopTrackYXXX
+            part = new Part(3406, "TopTrackYXXX", this, 4, m_subAssemblyWidth);
+            part.PartGroupType = "Tracks-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 4; i++)
-            {
-
-                part = new Part(3406, "TopTrackYXXX", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "Tracks-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
+            //////////////////////////////////////////////////////////////////////////////
 
             //FASTrack_INT_X
-
-            for (int i = 0; i < 1; i++)
-            {
-
-                part = new Part(3444, "FASTrack_INT_X", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "Tracks-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(3444, "FASTrack_INT_X", this, 1, m_subAssemblyWidth);
+            part.PartGroupType = "Tracks-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             //FASTrack_XXX_EXT
+            part = new Part(3444, "FASTrack_XXX_EXT", this, 3, m_subAssemblyWidth - 4.0m);
+            part.PartGroupType = "Tracks-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 3; i++)
-            {
-
-                part = new Part(3444, "FASTrack_XXX_EXT", this, 1, m_subAssemblyWidth - 4.0m);
-                part.PartGroupType = "Tracks-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -131,101 +112,89 @@ namespace FrameWorks.Makes.System3010
 
             //BridgeAssemble
 
-            /////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////
 
             //Bridge
-
             for (int i = 1; i < m_subAssemblyWidth / 20.0m + 1; i++)
             {
-
-
                 part = new Part(3445, "Bridge", this, 1, bridgeLength);
                 part.PartGroupType = "BridgeAssemble-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
-            //BridgeClips
+            //////////////////////////////////////////////////////////////////////////////
 
+            //BridgeClips
             for (int i = 0; i < m_subAssemblyWidth / 20.0m * 2.0m + 1.0m; i++)
             {
-
                 part = new Part(3446, "BridgeClips", this, 1, 0.0m);
                 part.PartGroupType = "BridgeAssemble-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
+            //////////////////////////////////////////////////////////////////////////////
 
             //TrackClips
-
             for (int i = 0; i < m_subAssemblyWidth / 20.0m * 8.0m + 5.0m; i++)
             {
-
                 part = new Part(3447, "TrackClips", this, 1, 0.0m);
                 part.PartGroupType = "BridgeAssemble-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
+            //////////////////////////////////////////////////////////////////////////////
 
             //NutPlateConnector
-
             for (int i = 0; i < m_subAssemblyWidth / 20.0m * 2.0m + 1.0m; i++)
             {
-
                 part = new Part(3448, "NutPlateConnector", this, 1, 0.0m);
                 part.PartGroupType = "BridgeAssemble-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
+            //////////////////////////////////////////////////////////////////////////////
 
-            //CapScrews
-
+            //CapScrews     
             for (int i = 0; i < m_subAssemblyWidth / 20.0m * 8.0m + 5.0m; i++)
             {
-
                 part = new Part(3449, "CapScrews", this, 1, 0.0m);
                 part.PartGroupType = "BridgeAssemble-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
-#endregion
+            //////////////////////////////////////////////////////////////////////////////
+
+            #endregion
 
             #region Frame
 
-            //FaciaHead
+            //////////////////////////////////////////////////////////////////////////////
+
+            //SplitHead
 
             for (int i = 0; i < 2; i++)
             {
 
                 if (m_subAssemblyWidth > maxsize)
                 {
-                    part = new Part(4364, "FaciaHead", this, 1, m_subAssemblyWidth - maxsize);
+                    part = new Part(4364, "SplitHead", this, 1, m_subAssemblyWidth - maxsize);
                     part.PartGroupType = "Frame-Parts";
                     part.PartLabel = "";
                     m_parts.Add(part);
 
-                    part = new Part(4364, "FaciaHead", this, 1, maxsize);
+                    part = new Part(4364, "SplitHead", this, 1, maxsize);
                     part.PartGroupType = "Frame-Parts";
                     part.PartLabel = "";
                     m_parts.Add(part);
                 }
                 else
                 {
-                    part = new Part(4364, "FaciaHead", this, 1, m_subAssemblyWidth);
+                    part = new Part(4364, "SplitHead", this, 1, m_subAssemblyWidth);
                     part.PartGroupType = "Frame-Parts";
                     part.PartLabel = "";
 
@@ -236,30 +205,23 @@ namespace FrameWorks.Makes.System3010
 
             }
 
-
-
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region HDPE_Head
 
+            //////////////////////////////////////////////////////////////////////////////
+
             //HDPE_Head
+            part = new Part(3454, "HDPE_Head", this, 1, m_subAssemblyWidth);
+            part.PartGroupType = "HDPE_Head-Parts";
+            part.PartLabel = "";
+            part.PartThick = 0.75m;
+            part.PartWidth = 11.5m;
+            m_parts.Add(part);
 
-            for (int i = 0; i < 1; i++)
-            {
-
-                part = new Part(3454, "HDPE_Head", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "HDPE_Head-Parts";
-                part.PartLabel = "";
-                part.PartThick = 0.75m;
-                part.PartWidth = 11.5m;
-
-                m_parts.Add(part);
-
-            }
-
-
+            //////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -270,7 +232,7 @@ namespace FrameWorks.Makes.System3010
         }
 
 
-            #endregion
+        #endregion
 
     }
 

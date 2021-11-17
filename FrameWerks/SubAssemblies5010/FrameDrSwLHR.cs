@@ -66,9 +66,9 @@ namespace FrameWorks.Makes.System5010
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
 
-
             #region Frame-Parts
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // JamBrzL -->> 
             decimal doorPanel = decimal.Zero;
@@ -76,7 +76,7 @@ namespace FrameWorks.Makes.System5010
             doorPanel = this.Parent.SubAssemblies[0].SubAssemblyHieght;
 
             part = new Part(4306, "JamBrzL|<", this, 1, m_subAssemblyHieght - calkJoint);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             decimal step = (doorPanel - 15.0m);
             step /= Convert.ToDecimal((FrameWorks.Functions.HingeCount(doorPanel) - 1));
             step = Math.Round(step, 4);
@@ -86,162 +86,122 @@ namespace FrameWorks.Makes.System5010
                              "3) Position 0rigin TOU @ ->" + (7.5m + 0.875m).ToString() + "\r\n" +
                              "4) Hinge Backer Prep->[1982.m] "
                    + FrameWorks.Functions.HingeCount(doorPanel).ToString() + "@<" + step.ToString() + ">O.C.";
-
             m_parts.Add(part);
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // JamBrzR -->>  
             part = new Part(4306, "JamBrzR|>", this, 1, m_subAssemblyHieght - calkJoint);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "1)MiterTop\r\n" +
                              "2) [911.m]Cope Jamb Bottom->\r\n" +
                              "3)[1962.m]Position 0rigin Strike Plate";
-
             m_parts.Add(part);
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // HeadBrz ^^
             part = new Part(4306, "HeadBrz", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "1)MiterEnds\r\n" +
-                             "2)[1987.m]Position 0rigin Shoot Strike";
-
+                             "2)[1987.m]Position 0rigin Shoot Strike";        
             m_parts.Add(part);
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Wood-Clad
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //Frame_CladJambs
+            part = new Part(4361, "WoodCladJambs", this, 2, m_subAssemblyHieght - calkJoint);
+            part.PartGroupType = "WoodFrameInt";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4361, "WoodCladJambs", this, 1, m_subAssemblyHieght - calkJoint);
-                part.PartGroupType = "WoodFrameInt-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //Frame_CladHead
+            part = new Part(4361, "WoodCladHead", this, 1, m_subAssemblyWidth);
+            part.PartGroupType = "WoodFrameInt";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4361, "WoodCladHead", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "WoodFrameInt-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region AssyBrackets
 
-            //////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // BrzCnrBrkt
-            for (int i = 0; i < 4; i++)
-            {
-                part = new Part(4265, "BrzCnrBrkt", this, 1, bronzeCrnBrk);
-                part.PartGroupType = "Hardware-Parts";
-                part.PartLabel = "";
+            part = new Part(4265, "BrzCnrBrkt", this, 4, bronzeCrnBrk);
+            part.PartGroupType = "Hardware";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            /////////////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // SocSetScrw.25_20
-            for (int i = 0; i < 16; i++)
-            {
-                part = new Part(1545, "SocSetScrw.25_20", this, 1, 0.0m);
-                part.PartGroupType = "AssemblyHdw-Parts";
-                part.PartLabel = "";
+            part = new Part(1545, "SocSetScrw.25_20", this, 16, 0.0m);
+            part.PartGroupType = "AssemblyHdw";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            /////////////////////////////////////////////////////////////////////////////////////////
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region HardWare
 
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // Strike Plate
-            part = new Part(4153, "Strike Plate", this, 1, 0.0m);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "";
+            //part = new Part(4153, "Strike Plate", this, 1, 0.0m);
+            //part.PartGroupType = "Hardware";
+            //part.PartLabel = "";
+            //m_parts.Add(part);
 
-            m_parts.Add(part);
-
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // Shoot Strike 
-            part = new Part(1988, "Shoot Strike", this, 2, 0.0m);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "";
+            //part = new Part(1988, "Shoot Strike", this, 2, 0.0m);
+            //part.PartGroupType = "Hardware";
+            //part.PartLabel = "";
+            //m_parts.Add(part);
 
-            m_parts.Add(part);
 
-
-            //////////////////////////////////////////////////////////////////////////////////////////
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Seal/Weatherstripping
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyWidth);
-
-            //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+            
             for (int i = 0; i < 1; i++)
             {
-
                 peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght - calkJoint, m_subAssemblyWidth);
-
                 //FrameSealKfolD
                 part = new Part(2274, "FrameSealKfolD", this, 1, peri - m_subAssemblyWidth - 4.0m * gasketReduce);
-                part.PartGroupType = "Seal-Parts";
+                part.PartGroupType = "Seal";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
-
-
         }
-
-
 
         #endregion
 
-
     }
+
 }

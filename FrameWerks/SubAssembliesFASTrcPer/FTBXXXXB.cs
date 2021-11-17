@@ -74,39 +74,43 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
             Part part;
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
+            //////////////////////////////////////////////   
 
             #region BladeSS
 
-            //BladeBX
-            part = new Part(3444, "BladeBX", this, 1, (trackHelper.DoorPanelWidth * 2));
-            part.PartGroupType = "BladeSS-Parts";
-            part.PartLabel = "";
-
-            m_parts.Add(part);
-
-
-            // BladeBXX
-            part = new Part(3444, "BladePXX", this, 1, (trackHelper.DoorPanelWidth * 3) - (stileWidth));
-            part.PartGroupType = "BladeSS-Parts";
-            part.PartLabel = "";
-
-            m_parts.Add(part);
-
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //BladeBX
             part = new Part(3444, "BladeBX", this, 1, (trackHelper.DoorPanelWidth * 2));
-            part.PartGroupType = "BladeSS-Parts";
+            part.PartGroupType = "BladeSS";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             // BladeBXX
             part = new Part(3444, "BladePXX", this, 1, (trackHelper.DoorPanelWidth * 3) - (stileWidth));
-            part.PartGroupType = "BladeSS-Parts";
+            part.PartGroupType = "BladeSS";
             part.PartLabel = "";
-
             m_parts.Add(part);
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //BladeBX
+            part = new Part(3444, "BladeBX", this, 1, (trackHelper.DoorPanelWidth * 2));
+            part.PartGroupType = "BladeSS";
+            part.PartLabel = "";
+            m_parts.Add(part);
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
+
+            // BladeBXX
+            part = new Part(3444, "BladePXX", this, 1, (trackHelper.DoorPanelWidth * 3) - (stileWidth));
+            part.PartGroupType = "BladeSS";
+            part.PartLabel = "";
+            m_parts.Add(part);
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -117,13 +121,10 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
             //PerfecT_BX
             for (int i = 0; i < 4; i++)
             {
-
                 part = new Part(4424, "PerfecT_BX", this, 1, (trackHelper.DoorPanelWidth * 2));
-                part.PartGroupType = "PerfecTack-Parts";
+                part.PartGroupType = "PerfecTack";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -131,17 +132,13 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
             //PerfecT_BXX
             for (int i = 0; i < 4; i++)
             {
-
                 part = new Part(4424, "PerfecT_BXX", this, 1, (trackHelper.DoorPanelWidth * 3) - (stileWidth));
-                part.PartGroupType = "PerfecTack-Parts";
+                part.PartGroupType = "PerfecTack";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             //////////////////////////////////////////////////////////////////////////////////////////////////
-
 
             // End_Cap_Gutter
             for (int i = 0; i < panelCount * 4.0m; i++)
@@ -149,7 +146,6 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
                 part = new Part(5593, "End_Cap_Gutter", this, 1, 1.25m);
                 part.PartGroupType = "PerfecTack";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
             }
 
@@ -158,44 +154,49 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
             #endregion
 
             //////////////////////////////////////////////           
-            
+
             #region Cross_Gutter
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Cross_Gutter
             for (int i = 0; i < panelCount - 2.0m; i++)
             {
-                part = new Part(5579, "Cross_Gutter", this, 1, 2.3936m);
+                part = new Part(5579, "Cross_Gutter", this, 1, 2.83m);
                 part.PartGroupType = "Cross_Gutter";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
             }
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region PVC_Drains
 
-            // PVC_90°Drain
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
+            // PVC_90°Drain
             for (int i = 0; i < panelCount - 2; i++)
             {
                 part = new Part(5634, "PVC_90°Drain", this, 1, 0.0m);
-                part.PartGroupType = "PVC_Drains-Parts";
+                part.PartGroupType = "PVC_Drains";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
             }
 
-            // PVC_StrightDrain
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
+            // PVC_StrightDrain
             for (int i = 0; i < panelCount; i++)
             {
                 part = new Part(5633, "PVC_StrightDrain", this, 1, 0.0m);
-                part.PartGroupType = "PVC_Drains-Parts";
+                part.PartGroupType = "PVC_Drains";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
             }
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -204,13 +205,11 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
             //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //SS_Drains
-
             for (int i = 0; i < trackHelper.DrainCount; i++)
             {
                 part = new Part(4465, "SS_Drains", this, 1, 0.0m);
-                part.PartGroupType = "SS_Drains-Parts";
+                part.PartGroupType = "SS_Drains";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
             }
 
@@ -222,19 +221,18 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
 
             #region BridgeAssemble
 
-            //BridgeAssemble
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
+            //Bridge
             for (int i = 1; i < panelCount + 1; i++)
-            {
-                //Bridge
-
+            {                
                 if (i > 1)
                 {
                     decimal waste = decimal.Zero;
                     for (int j = 1; j < trackHelper.BridgeCount + 1; j++)
                     {
                         part = new Part(3445, "Bridge", this, 1, bridgeGenie.result[i - 1]);
-                        part.PartGroupType = "BridgeAssemble-Parts";
+                        part.PartGroupType = "BridgeAssemble";
                         part.PartLabel = "";
                         m_parts.Add(part);
                         waste += 0.125m;
@@ -242,16 +240,14 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
                     part = new Part(3445, "Cutting Waste", this, 1, waste);
                     m_parts.Add(part);
                 }
-
                 else
                 {
                     decimal waste = decimal.Zero;
                     for (int j = 1; j < trackHelper.BridgeCount + 1; j++)
                     {
                         part = new Part(3445, "Bridge", this, 1, bridgeGenie.result[i - 1]);
-                        part.PartGroupType = "BridgeAssemble-Parts";
+                        part.PartGroupType = "BridgeAssemble";
                         part.PartLabel = "";
-
                         m_parts.Add(part);
                         waste += 0.125m;
                     }
@@ -259,101 +255,86 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
                     m_parts.Add(part);
                 }
 
+                //////////////////////////////////////////////////////////////////////////////////////////////////
 
                 //BridgeClips
-
                 if (i > 1)
                 {
-
                     part = new Part(3446, "BridgeClips", this, trackHelper.BridgeCount * 2, 0.0m);
-                    part.PartGroupType = "BridgeAssemble-Parts";
+                    part.PartGroupType = "BridgeAssemble";
                     part.PartLabel = "";
-
                     m_parts.Add(part);
-
                 }
-
                 else
                 {
-
                     part = new Part(3446, "BridgeClips", this, trackHelper.BridgeCount * 2, 0.0m);
-                    part.PartGroupType = "BridgeAssemble-Parts";
+                    part.PartGroupType = "BridgeAssemble";
                     part.PartLabel = "";
-
                     m_parts.Add(part);
-
                 }
 
+                //////////////////////////////////////////////////////////////////////////////////////////////////
 
                 //TrackBolts
-
                 if (i > 1)
                 {
                     part = new Part(3451, "TrackBolts", this, trackHelper.BridgeCount * 2, 0.0m);
-                    part.PartGroupType = "BridgeAssemble-Parts";
+                    part.PartGroupType = "BridgeAssemble";
                     part.PartLabel = "";
-
                     m_parts.Add(part);
                 }
                 else
                 {
                     part = new Part(3451, "TrackBolts", this, trackHelper.BridgeCount * 2, 0.0m);
-                    part.PartGroupType = "BridgeAssemble-Parts";
+                    part.PartGroupType = "BridgeAssemble";
                     part.PartLabel = "";
-
                     m_parts.Add(part);
                 }
 
-
+                //////////////////////////////////////////////////////////////////////////////////////////////////
 
                 //TrackClips
-
                 part = new Part(3447, "TrackClips", this, trackHelper.BridgeCount * i * 2, 0.0m);
-                part.PartGroupType = "BridgeAssemble-Parts";
+                part.PartGroupType = "BridgeAssemble";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
 
+                //////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+                //CapScrews
                 part = new Part(3449, "CapScrews", this, trackHelper.BridgeCount * i * 2, 0.0m);
-                part.PartGroupType = "BridgeAssemble-Parts";
+                part.PartGroupType = "BridgeAssemble";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
 
-
+                //////////////////////////////////////////////////////////////////////////////////////////////////
 
                 //FlangeNuts
-
                 if (i > 1)
                 {
                     part = new Part(3450, "FlangeNuts", this, trackHelper.BridgeCount * 4, 0.0m);
-                    part.PartGroupType = "BridgeAssemble-Parts";
+                    part.PartGroupType = "BridgeAssemble";
                     part.PartLabel = "";
-
                     m_parts.Add(part);
-
                 }
                 else
                 {
                     part = new Part(3450, "FlangeNuts", this, trackHelper.BridgeCount * 4, 0.0m);
-                    part.PartGroupType = "BridgeAssemble-Parts";
+                    part.PartGroupType = "BridgeAssemble";
                     part.PartLabel = "";
-
                     m_parts.Add(part);
                 }
 
+                //////////////////////////////////////////////////////////////////////////////////////////////////
 
                 //NutPlateConnector
-
                 if (i > 1 && i != panelCount)
                 {
                     // your the second door but NOT second to last
                     if (i >= 2 && i < (panelCount - 1))
                     {
                         part = new Part(3448, "NutPlateConnector", this, trackHelper.BridgeCount * (panelCount - 2), 0.0m);
-                        part.PartGroupType = "BridgeAssemble-Parts";
+                        part.PartGroupType = "BridgeAssemble";
                         part.PartLabel = "";
 
                         m_parts.Add(part);
@@ -362,24 +343,23 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
                     else
                     {
                         part = new Part(3448, "NutPlateConnector", this, trackHelper.BridgeCount * (panelCount - 2), 0.0m);
-                        part.PartGroupType = "BridgeAssemble-Parts";
+                        part.PartGroupType = "BridgeAssemble";
                         part.PartLabel = "";
-
                         m_parts.Add(part);
-
                     }
 
-
-
-
                 }
+
+                //////////////////////////////////////////////////////////////////////////////////////////////////
             }
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region PocBrdgAssY
 
-            //PocBrdgAssY
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //Bridge
             for (int i = 0; i < 2; i++)
@@ -387,106 +367,86 @@ namespace FrameWorks.Makes.SubAssembliesFASTrcPerft
                 part = new Part(3445, "BridgePoc", this, trackHelper.BridgeCount, doorSpacing * 1, 0.0m);
                 part.PartGroupType = "PocBrdgAssY-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //BridgeClips
             for (int i = 0; i < 2; i++)
             {
-
                 part = new Part(3446, "BridgeClipsPoc", this, trackHelper.BridgeCount * 2, 0.0m);
-                part.PartGroupType = "PocBrdgAssY-Parts";
+                part.PartGroupType = "PocBrdgAssY";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
-            ///////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //TrackClips
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(3447, "TrackClipsPoc", this, trackHelper.BridgeCount * panelCount * 2, 0.0m);
-                part.PartGroupType = "PocBrdgAssY-Parts";
+                part.PartGroupType = "PocBrdgAssY";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //NutPlateConnector
-
             // your the second door but NOT second to last
-
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(3448, "NutPlateConPoc", this, (trackHelper.BridgeCount) * (panelCount - 2), 0.0m);
-                part.PartGroupType = "PocBrdgAssY-Parts";
+                part.PartGroupType = "PocBrdgAssY";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
-            //////////////////////////////////////////////////////////////////////////////////////////////////////
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //CapScrews
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(3449, "CapScrewsPoc", this, trackHelper.BridgeCount * panelCount * 2, 0.0m);
-                part.PartGroupType = "PocBrdgAssY-Parts";
+                part.PartGroupType = "PocBrdgAssY";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
-            //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //FlangeNuts
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(3450, "FlangeNutsPoc", this, trackHelper.BridgeCount * 4, 0.0m);
-                part.PartGroupType = "PocBrdgAssY-Parts";
+                part.PartGroupType = "PocBrdgAssY";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
             }
-            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             //TrackBolts
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(3451, "TrackBoltsPoc", this, trackHelper.BridgeCount * 2, 0.0m);
-                part.PartGroupType = "PocBrdgAssY-Parts";
+                part.PartGroupType = "PocBrdgAssY";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
             }
-            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
-
-
-
-
-
-
-
-
+            //////////////////////////////////////////////
 
         }
 
         #endregion
 
-
     }
+
 }

@@ -79,40 +79,30 @@ namespace FrameWorks.Makes.System3010
 
             #region NailFin
 
-
+            /////////////////////////////////////////////////////////////////////////////////////////
 
             // NailerWidthExt
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(3649, "NailerWidthExt", this, 1, m_subAssemblyWidth );
-                part.PartGroupType = "NailFin-Parts";
-                part.PartLabel = "1)MiterEnds";
-
-                m_parts.Add(part);
-
-            }
-
-
-            //////////////////////////////////////////////////////////////////////////////////////////
-
-            // NailFinTabs
-
-            part = new Part(3649, "NailFinTabs3Inch", this, Convert.ToInt32(this.m_subAssemblyWidth / 16.0m + 1.0m), NFtab);
+            part = new Part(3649, "NailerWidthExt", this, 1, m_subAssemblyWidth );
             part.PartGroupType = "NailFin-Parts";
-            part.PartLabel = "CUT_LENGTH_3_INCHES";
-
+            part.PartLabel = "1)MiterEnds";
             m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////
 
+            // NailFinTabs
+            part = new Part(3649, "NailFinTabs3Inch", this, Convert.ToInt32(this.m_subAssemblyWidth / 16.0m + 1.0m), NFtab);
+            part.PartGroupType = "NailFin-Parts";
+            part.PartLabel = "CUT_LENGTH_3_INCHES";
+            m_parts.Add(part);
 
+            /////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
-
 
         }
 
         #endregion
 
     }
+
 }

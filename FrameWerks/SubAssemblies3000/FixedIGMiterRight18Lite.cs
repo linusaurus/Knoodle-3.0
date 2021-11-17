@@ -61,529 +61,392 @@ namespace FrameWorks.Makes.System3000
             Part part;
             
 
-
-
             #region Frame
-
-
 
             // JambRight -->>
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght;
             part.FunctionalName = "JambR";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
 
             // JambLeft <<--
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght;
             part.FunctionalName = "JambL";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
 
             // HeadLeft ^^
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth;
             part.FunctionalName = "HeadLeft";
-            part.PartLabel = "VMiter_L_HMiter_R";
-            
+            part.PartLabel = "VMiter_L_HMiter_R";            
             m_parts.Add(part);
-
-
-
 
             // HeadRight ^^
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyDepth;
             part.FunctionalName = "HeadRight";
-            part.PartLabel = "VMiter_R_HMiter_L";
-            
+            part.PartLabel = "VMiter_R_HMiter_L";            
             m_parts.Add(part);
-
-
-
 
             // SillLeft ||
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth;
             part.FunctionalName = "SillLeft";
-            part.PartLabel = "VMiter_L_HMiter_R";
-            
+            part.PartLabel = "VMiter_L_HMiter_R";            
             m_parts.Add(part);
-
-
-
 
             // SillRight ||
             part = new Part(804);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyDepth;
             part.FunctionalName = "SillRight";
-            part.PartLabel = "VMiter_R_HMiter_L";
-            
+            part.PartLabel = "VMiter_R_HMiter_L";            
             m_parts.Add(part);
-
-
-
 
             // ExtCornerCover 
             part = new Part(2799);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght - 1.375m * 2.0m;
             part.FunctionalName = "ExtCornerCover";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
 
             // IntCornerCover 
             part = new Part(2798);
             part.Qnty = 1;
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght - 1.375m * 2.0m;
             part.FunctionalName = "IntCornerCover";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
 
             #endregion
 
             #region Stop
 
-
             // StopRight
-
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght - (0.625m * 2.0m);
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "StopRight";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
-
             // StopLeft
-
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyHieght - (0.625m * 2.0m);
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "StopLeft";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
-
             // StopTopLeft
-
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth - 0.625m;
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "StopTopLeft";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
-
             // StopTopRight
-
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyDepth - 0.625m;
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "StopTopRight";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
-
             // StopBotLeft
-
             string crap;
             crap = FrameWorks.Functions.StopWeepMachining(m_subAssemblyWidth - 0.0625m);
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyWidth - 0.625m;
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "StopBotLeft";
             part.PartLabel = "1)MiterEnds" + "\r\n" +
-                             "2)" + crap;
-            
+                             "2)" + crap;            
             m_parts.Add(part);
 
-
-
             // StopBotRight
-
-
             crap = FrameWorks.Functions.StopWeepMachining(m_subAssemblyDepth - 0.0625m);
             part = new Part(809);
             part.Qnty = 1;
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.ContainerAssembly = this;
             part.PartLength = m_subAssemblyDepth - 0.625m;
             part.PartWidth = part.Source.Width;
             part.PartThick = part.Source.Height;
             part.FunctionalName = "StopBotRight";
             part.PartLabel = "1)MiterEnds" + "\r\n" +
-                             "2)" + crap;
-            
+                             "2)" + crap;            
             m_parts.Add(part);
-
-
 
             #endregion
 
             #region Glass
 
-
             //GlassPanelL1
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL1";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.75m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);            
             m_parts.Add(part);
 
-
-
             //GlassPanelL2
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL2";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.875m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);  
             m_parts.Add(part); 
            
-
-            
             //GlassPanelL3
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL3";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.875m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);  
             m_parts.Add(part);  
-          
-
-            
+           
             //GlassPanelL4
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL4";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.5m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);        
             m_parts.Add(part); 
-           
-
-            
+                  
             //GlassPanelL5
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL5";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (609.625m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);   
             m_parts.Add(part); 
-           
-
-            
+          
             //GlassPanelL6
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL6";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.125m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);   
             m_parts.Add(part);   
-         
-
-            
+                
             //GlassPanelL7
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL7";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (609.625m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);  
             m_parts.Add(part);  
-          
-
-            
+                   
             //GlassPanelL8
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL8";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.5m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
-            m_parts.Add(part); 
-           
-
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m); 
+            m_parts.Add(part);
             
             //GlassPanelL9
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL9";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.875m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m); 
             m_parts.Add(part); 
            
-
-            
             //GlassPanelL10
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL10";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.875m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);    
             m_parts.Add(part);  
-          
-
-            
+        
             //GlassPanelL11
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL11";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.875m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);  
             m_parts.Add(part); 
-           
-
-            
+                 
             //GlassPanelL12
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL12";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.5m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);          
             m_parts.Add(part); 
-           
-
-            
+                       
             //GlassPanelL13
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL13";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.5m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);           
             m_parts.Add(part); 
-           
-
-            
+                       
             //GlassPanelL14
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL14";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (609.625m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);            
             m_parts.Add(part); 
-           
-
-            
+                      
             //GlassPanelL15
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL15";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (575.125m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);           
             m_parts.Add(part); 
-          
-
-            
+                     
             //GlassPanelL16
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL16";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (609.625m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);            
             m_parts.Add(part); 
-           
-
-            
+                      
             //GlassPanelL17
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelL17";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (557.0m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);            
             m_parts.Add(part);            
             
-
-
             //GlassPanelR18
-
             part = new Part(2829);
             part.FunctionalName = "GlassPanelR18";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyDepth - (0.9375m + 1.625m);
-            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (0.9375m * 2.0m);            
             m_parts.Add(part);
-
-
-
 
             #endregion
 
             #region Seal/Weatherstripping
-
 
             decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyDepth);
             peri += FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyWidth);
@@ -592,30 +455,22 @@ namespace FrameWorks.Makes.System3000
 
             //Glazing Seals
             part = new Part(1819, "Glazing Seal", this, 2, peri);
-            part.PartGroupType = "Seal-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Seal";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region Hardware
 
-
             // Braces
             part = new Part(1117);
             part.Qnty = 12;
-            part.PartGroupType = "Hardware-Parts";
+            part.PartGroupType = "Hardware";
             part.ContainerAssembly = this;
             part.FunctionalName = "Braces";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
-
 
             #endregion
 
@@ -657,13 +512,10 @@ namespace FrameWorks.Makes.System3000
 
             #endregion
 
-
         }
-
-
 
         #endregion
 
-
     }
+
 }

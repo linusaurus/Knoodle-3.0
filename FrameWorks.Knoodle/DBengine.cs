@@ -682,6 +682,7 @@ namespace Weaselware.Knoodle
         /// </summary>
         /// <param name="InUnit"></param>
         /// <returns>FrameWorks.Unit</returns>
+        /// problem with part duplication ------------->>
         private static FrameWorks.Unit PopulateUnit(BusinessObjects.Unit InUnit)
         {
             FrameWorks.Unit result = new Unit();
@@ -698,7 +699,9 @@ namespace Weaselware.Knoodle
                 // first pass to construct collection without building
                 result.AddSubAssembly(PopulateSub(comp,result));
             }
-            BuildOutAssemblies(result.SubAssemblies);
+            // this was producing duplicate parts , apparently not required for 
+            // forcing the SubAssembly to build out the parts
+            //BuildOutAssemblies(result.SubAssemblies);
             return result;
         }
 
@@ -752,7 +755,7 @@ namespace Weaselware.Knoodle
                 if (inSubAssembly.H.HasValue) newSub.SubAssemblyHieght = inSubAssembly.H.Value;
                 if (inSubAssembly.D.HasValue) newSub.SubAssemblyDepth = inSubAssembly.D.Value;
                 newSub.Parent = parent;
-                //newSub.Build();
+                newSub.Build();
             }
             else
             {
@@ -762,6 +765,8 @@ namespace Weaselware.Knoodle
 
             return newSub;
         }
+        // The problem is here ------------------------------------!!!!
+        //
 
         public static void FillBuildTree(TreeView buildTree, List<FrameWorks.Unit> units)
         {

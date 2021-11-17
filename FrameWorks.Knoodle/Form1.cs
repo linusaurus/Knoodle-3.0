@@ -61,10 +61,10 @@ namespace Weaselware.Knoodle
             InitializeComponent();
 
             // Load the Parts into memory
-            FrameWorks.SourceManager.SetConnectionString(@"Password=Kx09a32x;Persist Security Info=True;User ID=sa;
-                                                          Initial Catalog=DSDB2;Data Source=DATASERVER");
-            FrameWorks.LaborManager.SetConnectionString(@"Password=Kx09a32x;Persist Security Info=True;User ID=sa;
-                                                          Initial Catalog=PARTDB;Data Source=DATASERVER");
+           // FrameWorks.SourceManager.SetConnectionString(@"Password=Kx09a32x;Persist Security Info=True;User ID=sa;
+           //                                               Initial Catalog=DSDB2;Data Source=DATASERVER");
+           // FrameWorks.LaborManager.SetConnectionString(@"Password=Kx09a32x;Persist Security Info=True;User ID=sa;
+           //                                               Initial Catalog=PARTDB;Data Source=DATASERVER");
             FrameWorks.LaborManager.Load();
             //Need to put better exception handling here and start logging the exception messages
             try

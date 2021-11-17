@@ -60,88 +60,78 @@ namespace FrameWorks.Makes.System3000
         {
 
             Part part;
-            
 
-            #region Frame-Parts
+            #region Frame
 
+            //////////////////////////////////////////////////////////////////////////////
 
             // JambL <<-- 
-
             part = new Part(801, "JambL", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "1)MiterEnds";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "1)MiterEnds";            
             m_parts.Add(part);
 
-
+            //////////////////////////////////////////////////////////////////////////////
 
             // JambR -->> 
-
             part = new Part(801, "JambR", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "1)MiterEnds";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "1)MiterEnds";            
             m_parts.Add(part);
 
-
+            //////////////////////////////////////////////////////////////////////////////
 
             // Head ^^
-
             part = new Part(801, "Head", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "1)MiterEnds";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "1)MiterEnds";            
             m_parts.Add(part);
 
-
+            //////////////////////////////////////////////////////////////////////////////
 
             // Sill ||
-
             part = new Part(801, "Sill", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "1)MiterEnds";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "1)MiterEnds";            
             m_parts.Add(part);
 
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
-            #region Hardware-Parts
+            #region Hardware
 
+            //////////////////////////////////////////////////////////////////////////////
 
             // BRNZ L-BRACE
-
             part = new Part(1115, "BRNZ L-BRACE", this, 8, 0.0m);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Hardware";
+            part.PartLabel = "";           
             m_parts.Add(part);
+
+            //////////////////////////////////////////////////////////////////////////////
 
             // Hinge L
-
             part = new Part(FrameWorks.Functions.AwningHinge(m_subAssemblyHieght, 'L'), "L-Hinge", this, 1, 0.0m);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Hardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
+            //////////////////////////////////////////////////////////////////////////////
 
             // Hinge R
-
             part = new Part(FrameWorks.Functions.AwningHinge(m_subAssemblyHieght, 'R'), "R-Hinge", this, 1, 0.0m);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Hardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-            
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
-                #region Labor
+            #region Labor
 
+            //////////////////////////////////////////////////////////////////////////////
 
             part = new LPart("MetalHours", this, 8.0m, 80.0m);
             m_parts.Add(part);
@@ -151,15 +141,14 @@ namespace FrameWorks.Makes.System3000
             m_parts.Add(part);
             //2 SandLineGrain: 2 Finish
 
-
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
-
 
         }
 
         #endregion
 
     }
+
 }

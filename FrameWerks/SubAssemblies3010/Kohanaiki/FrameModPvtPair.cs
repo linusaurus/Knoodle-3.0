@@ -66,19 +66,15 @@ namespace FrameWorks.Makes.System3010
             Part part;
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
-
-
             #region Frame-Parts
 
+            //////////////////////////////////////////////////////////////////////////////////////////
 
             // JamBrzPair -->> 
-
             for (int i = 0; i < 2; i++)
             {
                 decimal doorPanel = decimal.Zero;
-
                 doorPanel = this.Parent.SubAssemblies[0].SubAssemblyHieght;
-
                 part = new Part(4306, "JamBrzPair<", this, 1, m_subAssemblyHieght - calkJoint);
                 part.PartGroupType = "Frame-Parts";
                 decimal step = (doorPanel - 15.0m);
@@ -86,14 +82,11 @@ namespace FrameWorks.Makes.System3010
                 step = Math.Round(step, 4);
                 //string msg = "";
                 part.PartLabel = "1) MiterTop\r\n" +
-                                 "2) [911.m]Cope Jamb Bottom->";
-
+                                 "2) [911.m]Cope Jamb Bottom->";          
                 m_parts.Add(part);
-
-
             }
 
-
+            //////////////////////////////////////////////////////////////////////////////////////////
 
             // HeadBrzPair ^^
             part = new Part(4306, "HeadBrzPair", this, 1, m_subAssemblyWidth);
@@ -101,58 +94,47 @@ namespace FrameWorks.Makes.System3010
             part.PartLabel = "1)MiterEnds\r\n" +
                              "2)[1987.m]Position 0rigin Shoot Strike\r\n" +
                              "3)Prep for 2 PN:3933 2 PN:4417";
-
             m_parts.Add(part);
 
+            //////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region HardWare
 
+            //////////////////////////////////////////////////////////////////////////////////////////
 
             // PVC ASTRAGAL
             part = new Part(1901, "PVC ASTRAGAL", this, 1, m_subAssemblyHieght - headReduct - botumRedut);
             part.PartGroupType = "HardWare-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-
+            //////////////////////////////////////////////////////////////////////////////////////////
 
             // PairShootStrike 
             part = new Part(1986, "PairShootStrike", this, 2, 0.0m);
             part.PartGroupType = "HardWare-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
-
 
             //////////////////////////////////////////////////////////////////////////////////////////
 
             // AglBrktBrz
-
-            for (int i = 0; i < 4; i++)
-            {
-                part = new Part(4265, "AglBrktBrz", this, 1, bronzeCrnBrk);
-                part.PartGroupType = "Hardware-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
+            part = new Part(4265, "AglBrktBrz", this, 4, bronzeCrnBrk);
+            part.PartGroupType = "Hardware-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////////////////
-
 
             #endregion
 
             #region Seal/Weatherstripping
 
-
-
+            //////////////////////////////////////////////////////////////////////////////////////////
 
             decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyWidth);
 
@@ -160,38 +142,19 @@ namespace FrameWorks.Makes.System3010
 
             for (int i = 0; i < 1; i++)
             {
-
                 peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght - calkJoint, m_subAssemblyWidth);
-
                 //FrameSealKfolD
                 part = new Part(2274, "FrameSealKfolD", this, 1, peri - m_subAssemblyWidth - 4.0m);
                 part.PartGroupType = "Seal-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-
-
             #endregion
 
-
-
-
-
-
-
-
-
-
         }
-
-
 
         #endregion
 

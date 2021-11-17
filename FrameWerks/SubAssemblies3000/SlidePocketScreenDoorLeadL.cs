@@ -57,346 +57,233 @@ namespace FrameWorks.Makes.System3000
         //Bill of Material
         public override void Build()
         {
-
-
-            
-
-
+           
             #region Panel
 
-
             // StileL <<--
-
             part = new Part(1167, "StileL", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // StileR -->>
-
             part = new Part(1167, "StileR", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // RailT ^^
-
             part = new Part(1167, "RailT", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // RailB ||
-
             part = new Part(1167, "RailB", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Hooking Cap R <<--
-
             part = new Part(2157, "HookingCapR", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "Machine Notch 0.50m";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "Machine Notch 0.50m";            
             m_parts.Add(part);
-
 
             // Stile Cap L -->>
-
             part = new Part(2158, "CapL", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Plastic Hook Strip
-
             part = new Part(924, "HookStrip", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Filler Edge
-
             part = new Part(1818, "FillerEdge", this, 2, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Brush Holder 
-
             part = new Part(1404, "BrushHolder", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Guide Fin 
-
             part = new Part(2071, "GuideFin", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
 
             #endregion
 
             #region Stop
 
-
             // StopFrontLeft
             part = new Part(809, "StopFrontLeft", this, 1, m_subAssemblyHieght - (1.3125m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
-
 
             // StopRearLeft
             part = new Part(809, "StopRearLeft", this, 1, m_subAssemblyHieght - (1.3125m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
-
 
             // StopFrontRight
             part = new Part(809, "StopFrontRight", this, 1, m_subAssemblyHieght - (1.3125m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
-
 
             // StopRearRight
             part = new Part(809, "StopRearRight", this, 1, m_subAssemblyHieght - (1.3125m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
-
 
             // StopFrontTop
             part = new Part(809, "StopFrontTop", this, 1, m_subAssemblyWidth - (1.3125m * 3.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
-
 
             // StopRearTop
             part = new Part(809, "StopRearTop", this, 1, m_subAssemblyWidth - (1.3125m * 3.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
-
 
             // StopFrontBot
             string crap;
             crap = FrameWorks.Functions.StopWeepMachining(m_subAssemblyWidth - 3.0m * 1.3125m);
             part = new Part(809, "StopFrontBot", this, 1, m_subAssemblyWidth - (1.3125m * 3.0m));
-            part.PartGroupType = "Stop-Parts";
+            part.PartGroupType = "Stop";
             part.PartLabel = "1) Miter Ends" + "\r\n" +
-                             "2)" + crap;
-            
+                             "2)" + crap;            
             m_parts.Add(part);
-
-
 
             // StopRearBot
             part = new Part(809, "StopRearBot", this, 1, m_subAssemblyWidth - (1.3125m * 3.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
-
 
             #endregion
 
             #region Screen
-
-
-
             
             // Screen Cap Vertical ||
-
             part = new Part(2446, "CapV", this, 2 , m_subAssemblyHieght - 1.3125m );
-            part.PartGroupType = "Screen-Parts";
-            part.PartLabel = ".";
-            
+            part.PartGroupType = "Screen";
+            part.PartLabel = ".";            
             m_parts.Add(part);
-
 
             // Screen Cap Horizontal
-
             part = new Part(2446, "CapH", this, 2, m_subAssemblyWidth - 1.3125m );
-            part.PartGroupType = "Screen-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Screen";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
 
             #endregion
 
             #region Hardware
 
-
             //DS Sliding Door Lock
             part = new Part(2430, "SlidingDoorLock", this, 1, decimal.Zero);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Hardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Assemble Braces
             part = new Part(1115, "Braces", this, 8, 0.0m);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Hardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Screws 
             part = new Part(1300, "Screws", this, Convert.ToInt32(((m_subAssemblyHieght / 4.0m) + 2.0m)), decimal.Zero);
-            part.PartGroupType = "Hardware-Parts";
-            part.PartLabel = "Screws for 924";
-            
+            part.PartGroupType = "Hardware";
+            part.PartLabel = "Screws for 924";            
             m_parts.Add(part);
-
-
-
-
-
-
-
 
             #endregion
 
             #region TrollyHardware
 
-
             //3 Blue Turcite Wheels
             part = new Part(1586, "Wheels", this, 2, decimal.Zero);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             //Pendant Bolt 
             part = new Part(2347, "PenBolt", this, 2, decimal.Zero);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             //Socket Set Screw 
             part = new Part(480, "SetScrew", this, 2, decimal.Zero);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             //Suspension Plate 
             part = new Part(2124, "SuspensionPlate", this, 2, decimal.Zero);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             //Screw Hex Head Cap
             part = new Part(1567, "HexCap", this, 2, decimal.Zero);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Suspention Track
             part = new Part(2148, "SuspentionTrack", this, 2, 0.0m);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Aluminum Block Shim
             part = new Part(2454, "BlockShim", this, 2, 0.0m);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Track Stop
             part = new Part(2311, "TrackStop", this, 2, 0.0m);
-            part.PartGroupType = "TrollyHardware-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "TrollyHardware";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
-
 
             #endregion
 
             #region Seals
 
-
-
             // Weather Strip
             part = new Part(1029, "WeatherStrip", this, 2, m_subAssemblyWidth);
-            part.PartGroupType = "Seal-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Seal";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Glazing Vinyl
             part = new Part(1819, "GlazingVinyl", this, 1, FrameWorks.Functions.Perimeter(m_subAssemblyWidth, m_subAssemblyHieght, 1.625m) * 2.0m);
-            part.PartGroupType = "Seal-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Seal";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
 
             #endregion
 
                 #region Labor
-
 
             part = new LPart("Design", this, 4.0m, 80.0m);
             m_parts.Add(part);
@@ -432,16 +319,12 @@ namespace FrameWorks.Makes.System3000
             m_parts.Add(part);
             //1 Load
 
-
             #endregion
-
 
         }
 
-
         #endregion
 
-
-
     }
+
 }

@@ -87,266 +87,194 @@ namespace FrameWorks.Makes.System5010
             string partleader = this.Parent.UnitID + "." + this.CreateID.ToString();
 
 
-
             #region UniTopTrack
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //TopTrackYX
             part = new Part(3406, "TopTrackOX", this, 1, (trackHelper.DoorPanelWidth * 2.0m) - stileOverLap + doorGap );
-            part.PartGroupType = "UniTopTrack-Parts";
+            part.PartGroupType = "UniTopTrack";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // TopTrackYOX
             part = new Part(3406, "TopTrackO_", this, 1, (trackHelper.DoorPanelWidth) + doorGap + yTrAccess - yTrack);
-            part.PartGroupType = "UniTopTrack-Parts";
+            part.PartGroupType = "UniTopTrack";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //ShapedYtrackRubber -->> 
-            for (int i = 0; i < 2; i++)
-            {
+            part = new Part(3766, "ShapedYtrackRubber", this, 2, 0.0m);
+            part.PartGroupType = "TopTrackY";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-
-                part = new Part(3766, "ShapedYtrackRubber", this, 1, 0.0m);
-                part.PartGroupType = "TopTrackY-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Over_Travel
 
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //OTB_OX
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(5426, "OTB_OX", this, 1, 0.0m);
-                part.PartGroupType = "Over_Travel";
-                part.PartLabel = "";
+            part = new Part(5426, "OTB_OX", this, 1, 0.0m);
+            part.PartGroupType = "Over_Travel";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //OTB_Filler
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(5271, "OTB_Filler", this, 1, 0.0m);
-                part.PartGroupType = "Over_Travel";
-                part.PartLabel = "";
+            part = new Part(5271, "OTB_Filler", this, 1, 0.0m);
+            part.PartGroupType = "Over_Travel";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region QuadSeal
 
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //QuadSeal
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4910, "QuadSeal", this, 1, 0.0m);
-                part.PartGroupType = "QuadSeal";
-                part.PartLabel = "";
+            part = new Part(4910, "QuadSeal", this, 1, 0.0m);
+            part.PartGroupType = "QuadSeal";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Frame
 
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //BzJambExt -->> 
-            for (int i = 0; i < 2; i++)
-            {
+            part = new Part(4363, "BzJambExt", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-
-                part = new Part(4363, "BzJambExt", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //AlumJambXDoor -->> 
-            for (int i = 0; i < 1; i++)
-            {
+            part = new Part(4357, "AlumJambXDoor", this, 1, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-
-                part = new Part(4357, "AlumJambXDoor", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //AluJambIntODoor -->> 
-            for (int i = 0; i < 1; i++)
-            {
+            part = new Part(4357, "AlumJambIntODoor", this, 1, m_subAssemblyHieght - reducHDPE - calkGap);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-
-                part = new Part(4357, "AlumJambIntODoor", this, 1, m_subAssemblyHieght - reducHDPE - calkGap);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // BrzHeadExtX ^^
             part = new Part(4364, "BrzHeadExtX", this, 1, (trackHelper.DoorPanelWidth) - jambInset - spltHdRed);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            ////////////////////////////////////////////////////////////////////////////////
-
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+            
             // BrzHeadExtO ^^
             part = new Part(4364, "BrzHeadExtO", this, 1, (trackHelper.DoorPanelWidth) - jambInset + spltHdAdd);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //Brz_OX_OTB_EndCap -->> 
-            for (int i = 0; i < 1; i++)
-            {
+            part = new Part(4364, "Brz_OX_OTB_EndCap", this, 1, 0.0m);
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";
+            part.PartLength = 2.875m;
+            m_parts.Add(part);
 
-                part = new Part(4364, "Brz_OX_OTB_EndCap", this, 1, 0.0m);
-                part.PartGroupType = "Frame-Parts";
-                part.PartLabel = "";
-                part.PartLength = 2.875m;
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // AlumHeadInt ^^
             part = new Part(4362, "AlumHeadInt", this, 1, m_subAssemblyWidth - jambDimW - calkGap);
-            part.PartGroupType = "Frame-Parts";
+            part.PartGroupType = "Frame";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            ////////////////////////////////////////////////////////////////////////////////
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region WoodClad
 
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // WoodCladLSJamb -->> 
-            for (int i = 0; i < 2; i++)
-            {
+            part = new Part(4339, "WoodCladLSJamb", this, 2, m_subAssemblyHieght - calkGap);
+            part.PartGroupType = "WoodClad";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                part = new Part(4339, "WoodCladLSJamb", this, 1, m_subAssemblyHieght - calkGap);
-                part.PartGroupType = "WoodClad-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ///////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // WoodCladLSHead ^^
-            for (int i = 0; i < 1; i++)
-            {
+            part = new Part(4339, "WoodCladLSHead", this, 1, m_subAssemblyWidth - cladRed2X);
+            part.PartGroupType = "WoodClad";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                part = new Part(4339, "WoodCladLSHead", this, 1, m_subAssemblyWidth - cladRed2X);
-                part.PartGroupType = "WoodClad-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
-            #region Top_Seal
+            #region Quad Seal
 
-            for (int i = 0; i < 1; i++)
-            {
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
-                part = new Part(3927, "Seal_at_Head", this, 1,  0.0m);
-                part.PartGroupType = "Top_Seal-Parts";
-                part.PartLabel = "";
+            // Quad Seal
+            part = new Part(3927, "QuadSeal", this, 1,  0.0m);
+            part.PartGroupType = "Quad Seal";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region HDPE
 
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             decimal HDPEnotch = trackHelper.DoorPanelWidth + headHDPEadd + notchHDPEadd;
             string notchHDPE = "notch head @ " + HDPEnotch.ToString();
 
             // HDPE_Head ^^
             part = new Part(3442, "HDPE_Head", this, 1, (trackHelper.DoorPanelWidth * panelCount) - stileOverLap + headHDPEadd2X);
-            part.PartGroupType = "HDPE-Parts";
+            part.PartGroupType = "HDPE";
             part.PartLabel = notchHDPE;
             part.PartThick = 0.75m;
             part.PartWidth = 5.75m;
 
             m_parts.Add(part);
 
-            //////////////////////////////////////////////////////////////////////////////
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // HDPE_Jamb
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(4400, "HDPE_Jamb", this, 1, m_subAssemblyHieght - calkGap - reducHDPE);
-                part.PartGroupType = "HDPE-Parts";
+                part.PartGroupType = "HDPE";
                 part.PartLabel = "";
                 part.PartThick = 0.75m;
                 part.PartWidth = 2.875m;
@@ -355,37 +283,28 @@ namespace FrameWorks.Makes.System5010
 
             }
 
-            //////////////////////////////////////////////////////////////////////////////
-            //////////////////////////////////////////////////////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // HDPE_HeadFiller
             for (int i = 0; i < 1; i++)
             {
                 part = new Part(4871, "HDPE_HeadFiller", this, 1, 0.0m );
-                part.PartGroupType = "HDPE-Parts";
+                part.PartGroupType = "HDPE";
                 part.PartLabel = "";
                 part.PartThick = 0.75m;
                 part.PartWidth = 1.6875m;
-                part.PartLength = 2.4375m;
-                
-
+                part.PartLength = 2.4375m;               
                 m_parts.Add(part);
-
             }
 
-            //////////////////////////////////////////////////////////////////////////////
-
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
-
         }
-
 
         #endregion
 
     }
-
 
 }

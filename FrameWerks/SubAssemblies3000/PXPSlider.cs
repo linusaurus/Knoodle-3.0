@@ -89,7 +89,6 @@ namespace FrameWorks.Makes.System3000
             m_panelWidth += (((m_decimalPanelCount/2.0m) -1)* STILEWIDTH);
             m_panelWidth /= (m_decimalPanelCount / 2.0m);
             return Math.Round(m_panelWidth, 4);
-
          }
 
       }
@@ -112,12 +111,10 @@ namespace FrameWorks.Makes.System3000
                   m_floorTrackLength = (trackMultiplier * Division ) + STILEWIDTH;
                   m_floorTrackLength += DoorPanelSize ;
                   m_floorTrackLength -= 1.25m;
-                  
-  
+                   
                }
                
                return Math.Round(m_floorTrackLength, 4);
-
          }
 
       }
@@ -137,12 +134,10 @@ namespace FrameWorks.Makes.System3000
                   m_head = (trackMultiplier * Division) + STILEWIDTH;
                   m_head += DoorPanelSize;
                   m_head += 1.25m;
-                  
-  
+                   
                }
 
                return Math.Round(m_head, 4);
-
          }
 
       }
@@ -168,7 +163,6 @@ namespace FrameWorks.Makes.System3000
                
             }
 
-
             return Math.Round(m_topTrackLength, 4);
 
          }
@@ -177,6 +171,6 @@ namespace FrameWorks.Makes.System3000
 
       #endregion
 
-
    }
+
 }

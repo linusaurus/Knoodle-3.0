@@ -68,35 +68,29 @@ namespace FrameWorks.Makes.System3000
 
             #region Panel-Frame
 
-
             // StileRight -->>
             part = new Part(1167, "StileR", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // StileLeft <<--
             part = new Part(1167, "StileL", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // RailTop ^^
             part = new Part(1167, "RailT", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";           
             m_parts.Add(part);
 
             // RailBottom ||
             part = new Part(1167, "RailB", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Panel-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Panel";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
@@ -104,216 +98,169 @@ namespace FrameWorks.Makes.System3000
 
             // AngleCorner ||
             part = new Part(2988, "AngleCorner", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Angle-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Angle";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region Filler
 
+            // Filler-Top
             part = new Part(1817, "Filler-Top", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Filler-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Filler";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
+            // Filler-Bottom
             part = new Part(1817, "Filler-Bottom", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Filler-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Filler";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
+            // Filler-Left
             part = new Part(1813, "Filler-Left", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Filler-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Filler";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
+            // Filler-Right
             part = new Part(1816, "Filler-Right", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Filler-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Filler";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region Stop
 
-
             // StopFrontLeft
             part = new Part(2986, "StopFrontLeft", this, 1, m_subAssemblyHieght - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             // StopRearLeft
             part = new Part(2986, "StopRearLeft", this, 1, m_subAssemblyHieght - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             // StopFrontRight
             part = new Part(2986, "StopFrontRight", this, 1, m_subAssemblyHieght - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             // StopRearRight
             part = new Part(2986, "StopRearRight", this, 1, m_subAssemblyHieght - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             // StopFrontTop
             part = new Part(2986, "StopFrontTop", this, 1, m_subAssemblyWidth - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             // StopRearTop
             part = new Part(2986, "StopRearTop", this, 1, m_subAssemblyWidth - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             // StopFrontBot
             part = new Part(2986, "StopFrontBot", this, 1, m_subAssemblyWidth - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             // StopRearBot
             part = new Part(2986, "StopRearBot", this, 1, m_subAssemblyWidth - (1.0m * 2.0m));
-            part.PartGroupType = "Stop-Parts";
-            part.PartLabel = "Miter Ends";
-            
+            part.PartGroupType = "Stop";
+            part.PartLabel = "Miter Ends";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region Muntin
 
-
             // MuntinBarExtH1 <-->
             part = new Part(2987, "MuntinBarExtH1", this, 1, m_subAssemblyWidth - 1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarExtH2 <-->
             part = new Part(2987, "MuntinBarExtH2", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarExtH3 <-->
             part = new Part(2987, "MuntinBarExtH3", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarExtH4 <-->
             part = new Part(2987, "MuntinBarExtH4", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarExtH5 <-->
             part = new Part(2987, "MuntinBarExtH5", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarIntH1 <-->
             part = new Part(2987, "MuntinBarIntH1", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarIntH2 <-->
             part = new Part(2987, "MuntinBarIntH2", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarIntH3 <-->
             part = new Part(2987, "MuntinBarIntH3", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarIntH4 <-->
             part = new Part(2987, "MuntinBarIntH4", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MuntinBarIntH5 <-->
             part = new Part(2987, "MuntinBarIntH5", this, 1, m_subAssemblyWidth - -1.3125m + 1.75m);
-            part.PartGroupType = "Muntin-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Muntin";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
             #region FoamTape
 
-
             // Foam Tape Vertical ||  #2808
             part = new Part(2808, "FoamTapeV", this, 4, m_subAssemblyHieght - 2.0m * 1.0m);
-            part.PartGroupType = "FoamTape-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "FoamTape";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // Foam Tape Horizontal <-->  #2808
             part = new Part(2808, "FoamTapeH", this, 8, m_subAssemblyWidth - (2.0m + 1.0m));
-            part.PartGroupType = "FoamTape-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "FoamTape";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
 
             #endregion
 
@@ -322,8 +269,7 @@ namespace FrameWorks.Makes.System3000
             //Door Bulb Seals
             part = new Part(1769, "Bulb Seal Door", this, 1, ((m_subAssemblyHieght * 2.0m) + (m_subAssemblyWidth * 2.0m)));
             part.PartGroupType = "Seals-Parts";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Glazing Seal
@@ -331,40 +277,30 @@ namespace FrameWorks.Makes.System3000
              m_subAssemblyHieght - (1.3125m * 2.0m));
             part = new Part(1819, "Glazing Seal", this, 1, peri *= 2.0m);
             part.PartGroupType = "Seals-Parts";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Door Bottom
             part = new Part(1518, "Door Bottom", this, 1, m_subAssemblyWidth);
             part.PartGroupType = "Seals-Parts";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
-
-
 
             #endregion
 
             #region Glass
 
-
             //Glass Panel
             part = new Part(2989);
             part.FunctionalName = "Glass";
-            part.PartGroupType = "Glass-Parts";
+            part.PartGroupType = "Glass";
             part.Qnty = 1;
             part.PartName = "PartName";
             part.PartLabel = "";
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - (1.6875m + 2.125m);
-            part.PartLength = m_subAssemblyHieght - (1.6875m * 2.0m);
-            
+            part.PartLength = m_subAssemblyHieght - (1.6875m * 2.0m);            
             m_parts.Add(part);
-
-
 
             #endregion
            
@@ -408,7 +344,6 @@ namespace FrameWorks.Makes.System3000
 
         }
 
-
         private int HingeCount(decimal HingeAxisLength)
         {
             int result = 0;
@@ -434,8 +369,8 @@ namespace FrameWorks.Makes.System3000
             return result;
         }
 
-
         #endregion
 
     }
+
 }

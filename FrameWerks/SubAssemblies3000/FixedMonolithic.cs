@@ -63,11 +63,10 @@ namespace FrameWorks.Makes.System3000
 
          #region Frame
 
-
          // JambRight -->>
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght;
          part.PartWidth = part.Source.Width;
@@ -80,7 +79,7 @@ namespace FrameWorks.Makes.System3000
          // JambLeft <<--
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght;
          part.PartWidth = part.Source.Width;
@@ -93,7 +92,7 @@ namespace FrameWorks.Makes.System3000
          // Head ^^
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth;
          part.PartWidth = part.Source.Width;
@@ -106,7 +105,7 @@ namespace FrameWorks.Makes.System3000
          // Sill ||
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth;
          part.PartWidth = part.Source.Width;
@@ -119,7 +118,7 @@ namespace FrameWorks.Makes.System3000
          // Braces
          part = new Part(1117);
          part.Qnty = 8;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth;
          part.PartWidth = part.Source.Width;
@@ -136,7 +135,7 @@ namespace FrameWorks.Makes.System3000
          // StopR
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght  - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -149,7 +148,7 @@ namespace FrameWorks.Makes.System3000
          // StopL
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght  - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -162,7 +161,7 @@ namespace FrameWorks.Makes.System3000
          // StopT
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth   - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -175,7 +174,7 @@ namespace FrameWorks.Makes.System3000
          // StopB
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth   - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -191,43 +190,37 @@ namespace FrameWorks.Makes.System3000
 
          // SpacerHori
          part = new Part(272, "SpacerHor", this, 2, m_subAssemblyWidth  - (1.375m * 2.0m));
-         part.PartGroupType = "Spacers-Parts";
+         part.PartGroupType = "Spacers";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
          // SpacerVert
          part = new Part(272, "SpacerVert", this, 2, m_subAssemblyWidth  - (0.788m * 2.0m));
-         part.PartGroupType = "Spacers-Parts";
+         part.PartGroupType = "Spacers";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
-         m_parts.Add(part);
-         
+         m_parts.Add(part);         
          
          #endregion
          
          #region Glass
 
-
          //Glass Panel
          part = new Part(-1);
          part.FunctionalName = "Glass";
-         part.PartGroupType = "Glass-Parts";
+         part.PartGroupType = "Glass";
          part.Qnty = 1;
          part.Source.MaterialDescription = "1/2 Glass";
          part.PartName = "PartName";
-         part.PartLabel = "Phantom Part";
+         part.PartLabel = "Phantom";
          part.Source.MaterialName = "0.5 Glass";
          part.ContainerAssembly = this;
-
          part.PartWidth =  m_subAssemblyHieght-(0.9375m * 2.0m);
          part.PartLength = m_subAssemblyWidth -(0.9375m * 2.0m);
          part.Source.UOM = 9;
-
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
-
-
 
          #endregion
 
@@ -265,15 +258,12 @@ namespace FrameWorks.Makes.System3000
          m_parts.Add(part);
           //.5 Load
 
-
          #endregion
 
-
       }
-
      
       #endregion
 
-
    }
+
 }

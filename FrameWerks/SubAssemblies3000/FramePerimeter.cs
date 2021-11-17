@@ -76,38 +76,31 @@ namespace FrameWorks.Makes.System3000
 
             #region Shower-Frame
 
-
             // JambRight
             part = new Part(2970, "JambRight", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // JambLeft
             part = new Part(2970, "JambLeft", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Head
             part = new Part(2970, "Head", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             //Threshold/Sill
             part = new Part(2970, "Threshold/Sill", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
-
             #endregion
-
 
              #region Labor
 
@@ -119,9 +112,6 @@ namespace FrameWorks.Makes.System3000
             m_parts.Add(part);
             //2 SandLineGrain: 2 Finish
 
-
-
-
             #endregion
 
         }
@@ -129,4 +119,5 @@ namespace FrameWorks.Makes.System3000
         #endregion
 
     }
+
 }

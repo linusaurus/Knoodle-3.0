@@ -115,8 +115,9 @@ namespace FrameWorks.Makes.System8000
 
             #region Frame-Parts
 
-            // Jamb_Wd -->> 
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+            // Jamb_Wd -->> 
             for (int i = 0; i < 2; i++)
             {
                 decimal doorPanel = decimal.Zero;
@@ -132,7 +133,6 @@ namespace FrameWorks.Makes.System8000
                 part.PartThick = 1.0m;
                 part.PartWidth = 3.625m;
                 part.PartLabel = "Jamb";
-
                 m_parts.Add(part);
             }
 
@@ -144,11 +144,9 @@ namespace FrameWorks.Makes.System8000
             part.PartThick = 1.0m;
             part.PartWidth = 3.625m;
             part.PartLabel = "EllipsHead";
-
             m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
             // DoorStpVert
             for (int i = 0; i < 2; i++)
@@ -159,9 +157,9 @@ namespace FrameWorks.Makes.System8000
                 part.PartWidth = 1.5m;
                 part.PartLabel = "";
                 m_parts.Add(part);
-
             }
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // DoorStpHorz ^^
             part = new Part(2373, "DoorStpHorz", this, 1, m_subAssemblyWidth + arkLenAddStp);
@@ -169,27 +167,31 @@ namespace FrameWorks.Makes.System8000
             part.PartThick = 0.75m;
             part.PartWidth = 1.5m;
             part.PartLabel = "EllipsStop";
-
             m_parts.Add(part);
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Threshold
 
+            ////////////////////////////////////////////////////////////////////////////////////
+
             // ThresRecAlmTube ^^
             part = new Part(2377, "ThresGut", this, 1, m_subAssemblyWidth);
             part.PartGroupType = "Threshold-Parts";
             part.PartLabel = "Sub_Threshold";
-
             m_parts.Add(part);
+
+            ////////////////////////////////////////////////////////////////////////////////////
 
             // PemkoBrzThrhld ^^
             part = new Part(5587, "PemkoBrzThrhld", this, 1, m_subAssemblyWidth - trhldReduce);
             part.PartGroupType = "Threshold-Parts";
             part.PartLabel = "Pemko_Threshold";
-
             m_parts.Add(part);
+
+            ////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -227,44 +229,41 @@ namespace FrameWorks.Makes.System8000
                 part.PartWidth = 3.50m;
                 part.PartLabel = "HingeStile";
                 m_parts.Add(part);
-
             }
+
+            ////////////////////////////////////////////////////////////////////////////////////
 
             // StileCenterRabbet
             for (int i = 0; i < 2; i++)
             {
-
                 part = new Part(2380, "StileCenterRabbet", this, 1, m_subAssemblyHieght - doorReduce - doorGapBot);
                 part.PartGroupType = "WoodStileRails";
                 part.PartWidth = 4.00m;
                 part.PartLabel = "1/2_Rabbet_Quirk";
                 m_parts.Add(part);
-
             }
+
+            ////////////////////////////////////////////////////////////////////////////////////
 
             // RailTop
             for (int i = 0; i < 2; i++)
             {
-
                 part = new Part(2380, "RailTop", this, 1, (m_subAssemblyWidth - jambsRedX2 - doorGapRedX2) / 2.0m - stileMeeting + railTenon + arkLengthAdd);
                 part.PartGroupType = "WoodStileRails";
                 part.PartWidth = 3.5m;
                 part.PartLabel = "EllipsTopRail";
-
                 m_parts.Add(part);
-
             }
+
+            ////////////////////////////////////////////////////////////////////////////////////
 
             // RailBot
             for (int i = 0; i < 2; i++)
             {
-
                 part = new Part(2376, "RailBot", this, 1, (m_subAssemblyWidth - jambsRedX2 - doorGapRedX2) / 2.0m + overlapRabt - stileHinge - stileMeeting + railTenon2X);
                 part.PartGroupType = "WoodStileRails";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             ////////////////////////////////////////////////////////////////////////////////////
@@ -273,27 +272,24 @@ namespace FrameWorks.Makes.System8000
 
             #region Muntins
 
-            ////////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // MuntHorz
             for (int i = 0; i < 6; i++)
             {
-
                 part = new Part(2378, "MuntHorz", this, 1, (m_subAssemblyWidth - sidMuntGP2 - centMuntGP + munTennon4X) / 2.0m);
                 part.PartGroupType = "Muntins";
-                part.PartLabel = "";
-
+                part.PartLabel = "";            
                 m_parts.Add(part);
-
             }
 
-
-
-            ////////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region StopWood
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // GlsStpVert
             for (int i = 0; i < 28; i++)
@@ -303,12 +299,10 @@ namespace FrameWorks.Makes.System8000
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = "Vert";
-
                 m_parts.Add(part);
-
             }
 
-            ////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // GlsStpTop
             for (int i = 0; i < 4; i++)
@@ -318,12 +312,10 @@ namespace FrameWorks.Makes.System8000
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = "Ellips";
-
                 m_parts.Add(part);
-
             }
 
-            ////////////////////////////////////////////////////////////////////////////////
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // GlsStp
             for (int i = 0; i < 16; i++)
@@ -333,20 +325,20 @@ namespace FrameWorks.Makes.System8000
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = "Horz";
-
                 m_parts.Add(part);
-
             }
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Glass
 
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
+
             // GlassPanel
             for (int i = 0; i < 6; i++)
-            {
-
-                //Glass Panel
+            {                
                 part = new Part(911);
                 part.FunctionalName = "Glass";
                 part.PartGroupType = "Glass-Parts";
@@ -356,16 +348,14 @@ namespace FrameWorks.Makes.System8000
                 part.PartLength = (m_subAssemblyHieght - glsDrGap - glsDrGapBot - muntinRedX3 ) / 4.0m;
                 part.PartThick = 0.25m;
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
+            //Glass Panel
             for (int i = 0; i < 2; i++)
-            {
-
-                //Glass Panel
+            {                
                 part = new Part(911);
                 part.FunctionalName = "Glass";
                 part.PartGroupType = "Glass-Parts";
@@ -375,10 +365,10 @@ namespace FrameWorks.Makes.System8000
                 part.PartLength = (m_subAssemblyHieght - glsDrGap - glsDrGapBot - muntinRedX3) / 4.0m;
                 part.PartThick = 0.25m;
                 part.PartLabel = "EllipsPattern";
-
                 m_parts.Add(part);
-
             }
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -387,29 +377,23 @@ namespace FrameWorks.Makes.System8000
             //////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Hinges
-
             for (int i = 0; i < 2; i++)
             {
                 part = new Part(5689, "Hinges", this, HingeCount(m_subAssemblyHieght), 0.0m);
                 part.PartGroupType = "Hardware-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Ball_Finials
-
             for (int i = 0; i < 4; i++)
             {
                 part = new Part(5694, "Ball_Finials", this, HingeCount(m_subAssemblyHieght), 0.0m);
                 part.PartGroupType = "Hardware-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -418,7 +402,10 @@ namespace FrameWorks.Makes.System8000
 
             #region Seal/Weatherstripping
 
+            //////////////////////////////////////////////////////////////////////////////////////////////////////
+            
 
+            //////////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -445,14 +432,12 @@ namespace FrameWorks.Makes.System8000
                 result = 6;
             }
 
-
             return result;
+
         }
-
-
-
 
         #endregion
 
     }
+
 }

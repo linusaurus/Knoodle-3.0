@@ -80,53 +80,29 @@ namespace FrameWorks.Makes.System3090
 
             #region DoorBzTB
 
-
-
             // StileBTBLeft
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(5319, "StileBTBLeft", this, 1, m_subAssemblyHieght);
-                part.PartGroupType = "DoorBzTB-Parts";
-                part.PartLabel = "1) Miter Ends";
-                m_parts.Add(part);
-
-            }
+            part = new Part(5319, "StileBTBLeft", this, 1, m_subAssemblyHieght);
+            part.PartGroupType = "DoorBzTB-Parts";
+            part.PartLabel = "1) Miter Ends";
+            m_parts.Add(part);
 
             // StileBTBRight
-            for (int i = 0; i < 1; i++)
-            {
-
-                part = new Part(5319, "StileBTBRight", this, 1, m_subAssemblyHieght);
-                part.PartGroupType = "DoorBzTB-Parts";
-                part.PartLabel = "1) Miter Ends";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(5319, "StileBTBRight", this, 1, m_subAssemblyHieght);
+            part.PartGroupType = "DoorBzTB-Parts";
+            part.PartLabel = "1) Miter Ends";
+            m_parts.Add(part);
 
             // RailBTBtop
-            for (int i = 0; i < 1; i++)
-            {
-
-                part = new Part(5319, "RailBTBtop", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "DoorBzTB-Parts";
-                part.PartLabel = "1) Miter Ends ";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(5319, "RailBTBtop", this, 1, m_subAssemblyWidth);
+            part.PartGroupType = "DoorBzTB-Parts";
+            part.PartLabel = "1) Miter Ends ";
+            m_parts.Add(part);
 
             // RailBTBbot
-            for (int i = 0; i < 1; i++)
-            {
-
-                part = new Part(5319, "RailBTBbot", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "DoorBzTB-Parts";
-                part.PartLabel = "1) Miter Ends ";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(5319, "RailBTBbot", this, 1, m_subAssemblyWidth);
+            part.PartGroupType = "DoorBzTB-Parts";
+            part.PartLabel = "1) Miter Ends ";
+            m_parts.Add(part);
 
             #endregion
 
@@ -142,9 +118,7 @@ namespace FrameWorks.Makes.System3090
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
 
             ////////////////////////////////////////////////////////////////////////////////
@@ -159,7 +133,6 @@ namespace FrameWorks.Makes.System3090
                 part.PartLabel = "";
 
                 m_parts.Add(part);
-
             }
 
             ////////////////////////////////////////////////////////////////////////////////
@@ -173,16 +146,13 @@ namespace FrameWorks.Makes.System3090
             // HDPE_LS_LockEdge
             for (int i = 0; i < 2; i++)
             {
-
                 part = new Part(4780, "HDPE_LS_LockEdge", this, 1, m_subAssemblyHieght);
                 part.PartGroupType = "HDPE-Parts";
                 part.PartWidth = part.Source.Width;
                 part.PartThick = part.Source.Height;
                 part.PartLabel = labelStileL = "";
-
                 m_parts.Add(part);
             }
-
 
             #endregion
 
@@ -191,66 +161,42 @@ namespace FrameWorks.Makes.System3090
             #region AssyBrackets
 
             //AlumPVC_CornerBrace
-
-            for (int i = 0; i < 4; i++)
-            {
-                part = new Part(5611, "AlumPVC_CornerBrace", this, 1, 0.0m);
-                part.PartGroupType = "AssyBrackets-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(5611, "AlumPVC_CornerBrace", this, 4, 0.0m);
+            part.PartGroupType = "AssyBrackets-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //Green_CnrBrcSS14ga_0.7049
-
-            for (int i = 0; i < 8; i++)
-            {
-                part = new Part(4829, "Green_CnrBrcSS14ga_0.7049", this, 1, 0.0m);
-                part.PartGroupType = "AssyBrackets-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4829, "Green_CnrBrcSS14ga_0.7049", this, 8, 0.0m);
+            part.PartGroupType = "AssyBrackets-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //Blue_CnrBrcSS14ga_0.4662
-
-            for (int i = 0; i < 4; i++)
-            {
-                part = new Part(4855, "Blue_CnrBrcSS14ga_0.4662", this, 1, 0.0m);
-                part.PartGroupType = "AssyBrackets-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4855, "Blue_CnrBrcSS14ga_0.4662", this, 4, 0.0m);
+            part.PartGroupType = "AssyBrackets-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
 
             //MS_FlatHead_8-32x3/16_SS
-
-            for (int i = 0; i < 48; i++)
-            {
-                part = new Part(502, "MS_FlatHead_8-32x3/16_SS", this, 1, 0.0m);
-                part.PartGroupType = "AssyBrackets-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(502, "MS_FlatHead_8-32x3/16_SS", this, 48, 0.0m);
+            part.PartGroupType = "AssyBrackets-Parts";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -261,11 +207,9 @@ namespace FrameWorks.Makes.System3090
             #region Delivery
 
             // LS_LeverPull_Set
-
             part = new Part(3912, "LS_LeverPull_Set", this, 1, 0.0m);
             part.PartGroupType = "Delivery-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             #endregion
@@ -277,44 +221,26 @@ namespace FrameWorks.Makes.System3090
             ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // TGParent_5651
-
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(5651, "TGParent_5651", this, 1, 0.0m);
-                part.PartGroupType = "GuidesTop-Parts";
-                part.PartLabel = "Top_Guide_Parent";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(5651, "TGParent_5651", this, 2, 0.0m);
+            part.PartGroupType = "GuidesTop-Parts";
+            part.PartLabel = "Top_Guide_Parent";
+            m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////
 
             // TopGuide4440
-
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4440, "TopGuide4440", this, 1, 0.0m);
-                part.PartGroupType = "GuidesTop-Parts";
-                part.PartLabel = "4440_NoEdgeCap";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4440, "TopGuide4440", this, 1, 0.0m);
+            part.PartGroupType = "GuidesTop-Parts";
+            part.PartLabel = "4440_NoEdgeCap";
+            m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // TopGuide4438
-
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4438, "TopGuide4438", this, 1, 0.0m);
-                part.PartGroupType = "GuidesTop-Parts";
-                part.PartLabel = "4438_RightOverlap";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4438, "TopGuide4438", this, 1, 0.0m);
+            part.PartGroupType = "GuidesTop-Parts";
+            part.PartLabel = "4438_RightOverlap";
+            m_parts.Add(part);
 
             ///////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -325,19 +251,15 @@ namespace FrameWorks.Makes.System3090
             #region HookCap
 
             // EndCap
-
             part = new Part(4498, "EndCap", this, 1, m_subAssemblyHieght + 0.0625m);
             part.PartGroupType = "HookCap-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             // HookStrip
-
             part = new Part(3710, "HookStrip", this, 1, m_subAssemblyHieght + 0.0625m);
             part.PartGroupType = "HookCap-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             #endregion
@@ -355,7 +277,6 @@ namespace FrameWorks.Makes.System3090
             part.PartWidth = m_subAssemblyWidth - glassReduceX2;
             part.PartLength = m_subAssemblyHieght - glassReduceX2;
             part.PartThick = 1.0m;
-
             m_parts.Add(part);
 
             #endregion
@@ -365,14 +286,12 @@ namespace FrameWorks.Makes.System3090
             #region HardWare Logic
 
             // FPL_LiftSlideGear
-
             part = new Part(5481, "FPL_LiftSlideGear", this, 1, m_subAssemblyHieght);
             part.PartGroupType = "Hardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            /////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FPL_CoverExtension
 
@@ -399,38 +318,30 @@ namespace FrameWorks.Makes.System3090
 
                 m_parts.Add(part);
             }
-            ///////////////////////
+
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // FPL_LockBolt
-
             part = new Part(5485, "FPL_LockBolt", this, 2, m_subAssemblyHieght);
             part.PartGroupType = "Hardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             // FPL_ShimsLockBolt
-
             part = new Part(5486, "FPL_ShimsLockBolt", this, 2, m_subAssemblyHieght);
             part.PartGroupType = "Hardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
             // FPL_CarrageKit
-
             part = new Part(5482, "FPL_CarrageKit", this, 1, m_subAssemblyWidth);
             part.PartGroupType = "Hardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-
-            /////////////////////
-
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // LinkRod
-
 
             if (m_subAssemblyWidth >= 25.5m && m_subAssemblyWidth < 130.0m)
             {
@@ -453,13 +364,11 @@ namespace FrameWorks.Makes.System3090
                 part = new Part(911, "LinkRod", this, 1, m_subAssemblyWidth);
             }
 
-
             part.PartGroupType = "Hardware-Parts";
             part.PartLabel = "";
-
             m_parts.Add(part);
 
-            ////////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -468,104 +377,67 @@ namespace FrameWorks.Makes.System3090
             #region Seal/Weatherstripping
 
             //GlazePreSet
-
             for (int i = 0; i < 1; i++)
             {
                 decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght - 2.581266m, m_subAssemblyWidth - 2.581266m);
-
                 part = new Part(4314, "GlazePreSet", this, 1, peri);
                 part.PartGroupType = "Seal-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
-
             }
 
-            /////////////////////////////////////////////////////////////////////////////////////////////////////////
+            ////////////////////////////////////////////////////////////////////////////////////////////////
 
             //GlazeWedgeSeals
-
             for (int i = 0; i < 1; i++)
             {
-
                 decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght - 2.581266m, m_subAssemblyWidth - 2.581266m);
-
                 part = new Part(4399, "GlazeWedgeSeals", this, 1, peri);
                 part.PartGroupType = "Seal-Parts";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
-
             }
 
-            //////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // Edge & Bottom Seal
+            part = new Part(1005, "Edge & Bottom Seal", this, 2, m_subAssemblyHieght + m_subAssemblyWidth);
+            part.PartGroupType = "Seal-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 2; i++)
-            {
-
-                part = new Part(1005, "Edge & Bottom Seal", this, 1, m_subAssemblyHieght + m_subAssemblyWidth);
-                part.PartGroupType = "Seal-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-
-            }
-
-            ///////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // Top Seal
+            part = new Part(3783, "Top Seal", this, 2, m_subAssemblyWidth);
+            part.PartGroupType = "Seal-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 2; i++)
-            {
-
-                part = new Part(3783, "Top Seal", this, 1, m_subAssemblyWidth);
-                part.PartGroupType = "Seal-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            /////////////////////////
+            ///////////////////////////////////////////////////////////////////////////////////////////////
 
             // HookPileT+Fin
+            part = new Part(3959, "HookPileT+Fin", this, 1, m_subAssemblyHieght);
+            part.PartGroupType = "Seal-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-            for (int i = 0; i < 1; i++)
-            {
-
-                part = new Part(3959, "HookPileT+Fin", this, 1, m_subAssemblyHieght);
-                part.PartGroupType = "Seal-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////
             /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             // Squash_Pad_4897
-
-            for (int i = 0; i < 1; i++)
-            {
-                part = new Part(4897, "Squash_Pad_4897", this, 1, 0.0m);
-                part.PartGroupType = "Seal-Parts";
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
+            part = new Part(4897, "Squash_Pad_4897", this, 1, 0.0m);
+            part.PartGroupType = "Seal-Parts";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
+            ///////////////////////////////////////////////////////////////////////////////////////////////
+
         }
+
         #endregion
 
     }

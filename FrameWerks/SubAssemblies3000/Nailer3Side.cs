@@ -31,32 +31,25 @@ namespace FrameWorks.Makes.System3000
 
             Part part;
             
-
             #region Nail Fin Perimeter
-
 
             // Top Nailer ^^
             part = new Part(922, "Top Nail Fin", this, 1, m_subAssemblyWidth + (1.280m * 2.0m));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Left Nailer <<--
             part = new Part(922, "Left Nail Fin", this, 1, m_subAssemblyHieght + (1.280m ));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // Right Nailer -->>
             part = new Part(922, "Right Nail Fin", this, 1, m_subAssemblyHieght + (1.280m ));
-            part.PartGroupType = "Nailer-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Nailer";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
-
 
             #endregion
 
@@ -66,20 +59,12 @@ namespace FrameWorks.Makes.System3000
             m_parts.Add(part);
             //0 Attachment
 
-
-
-
-
-
             #endregion
-
 
         }
 
-
-
         #endregion
 
-
     }
+
 }

@@ -100,9 +100,6 @@ namespace FrameWorks.Makes.System3000
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
  
-
-
-
          #endregion
 
          #region Labor
@@ -120,11 +117,11 @@ namespace FrameWorks.Makes.System3000
 
          #endregion
 
-
       }
 
       #endregion
 
    }
+
 }  
 

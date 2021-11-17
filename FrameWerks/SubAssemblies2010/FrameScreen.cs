@@ -67,99 +67,76 @@ namespace FrameWorks.Makes.System2010
 
             #region FrameScreen
 
-
             //////////////////////////////////////////////////////////////////////////////
 
             // ScreenFrameVert
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4430, "ScreenFrameVert", this, 1, m_subAssemblyHieght + screenAdd);
-                part.PartGroupType = "FrameScreen-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
-
-                m_parts.Add(part);
-
-            }
-
-            //////////////////////////////////////////////////////////////////////////////
-
+            part = new Part(4430, "ScreenFrameVert", this, 2, m_subAssemblyHieght + screenAdd);
+            part.PartGroupType = "FrameScreen";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
             //////////////////////////////////////////////////////////////////////////////
 
             // ScreenFrameHorz
-            for (int i = 0; i < 2; i++)
-            {
-                part = new Part(4430, "ScreenFrameHorz", this, 1, m_subAssemblyWidth + screenAdd);
-                part.PartGroupType = "FrameScreen-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
+            part = new Part(4430, "ScreenFrameHorz", this, 2, m_subAssemblyWidth + screenAdd);
+            part.PartGroupType = "FrameScreen";
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
-            ////////////////////////////////////////////////////////////////////////////////
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Mesh
 
+            //////////////////////////////////////////////////////////////////////////////
 
             //Mesh
-
             part = new Part(911);
-
             part.FunctionalName = "Mesh";
-            part.PartGroupType = "Mesh-Parts";
+            part.PartGroupType = "Mesh";
             part.Qnty = 1;
             part.ContainerAssembly = this;
             part.PartWidth = m_subAssemblyWidth - screenFrmRed2X;
             part.PartLength = m_subAssemblyHieght - screenFrmRed2X;
             part.PartThick = 0.3125m;
-
             m_parts.Add(part);
 
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Spline
 
+            //////////////////////////////////////////////////////////////////////////////
+
+            //Glazing Seals
             for (int i = 0; i < 1; i++)
             {
-
                 decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght - splineReduceX2, m_subAssemblyWidth - splineReduceX2);
-
-                //Glazing Seals
                 part = new Part(911, "Spline", this, 1, peri);
-                part.PartGroupType = "Spline-Parts";
+                part.PartGroupType = "Spline";
                 part.PartLabel = "";
-
                 m_parts.Add(part);
-
             }
+
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
             #region Hardware
 
+            //////////////////////////////////////////////////////////////////////////////
 
-            for (int i = 0; i < 4; i++)
-            {
-                part = new Part(911, "ScnFrmCrnBrackets", this, 1, aluminumCrnBrk);
-                part.PartGroupType = "Hardware-Parts";
-                part.PartWidth = part.Source.Width;
-                part.PartThick = part.Source.Height;
-                part.PartLabel = "";
+            //ScreenCrnBrkts
+            part = new Part(911, "ScreenCrnBrkts", this, 4, aluminumCrnBrk);
+            part.PartGroupType = "Hardware";
+            part.PartWidth = part.Source.Width;
+            part.PartThick = part.Source.Height;
+            part.PartLabel = "";
+            m_parts.Add(part);
 
-                m_parts.Add(part);
-
-            }
-
+            //////////////////////////////////////////////////////////////////////////////
 
             #endregion
 
@@ -167,6 +144,6 @@ namespace FrameWorks.Makes.System2010
 
         #endregion
 
-
     }
+
 }

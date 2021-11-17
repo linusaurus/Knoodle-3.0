@@ -266,14 +266,16 @@ namespace FrameWorks.Makes.SubAssembliesFASTrack
 
             #endregion
 
-        #region PVC_Pocket_Drain
+            #region PVC_Pocket_Drain
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////
 
             // PVC_Pocket_Drain
 
             for (int i = 0; i < 1; i++)
             {
                 part = new Part(5628, "PVC_Pocket_Drain", this, 1, 0.0m);
-                part.PartGroupType = "PVC_Pocket_Drain-Parts";
+                part.PartGroupType = "PVC_Pocket_Drain";
                 part.PartLabel = "";
 
                 m_parts.Add(part);
@@ -283,79 +285,78 @@ namespace FrameWorks.Makes.SubAssembliesFASTrack
 
         #region PocBrdgAssY
 
-            //PocBrdgAssY
+        //////////////////////////////////////////////////////////////////////////////////////////////////
 
-            //Bridge
-
-            decimal CutWaste = decimal.Zero;
-                    for (int j = 1; j < trackHelper.BridgeCount + 1; j++)
-                    {
-                        part = new Part(3445, "BridgePoc", this, 1, bridgeGenie.result[panelCount-1]);
-                        part.PartGroupType = "PocBrdgAssY-Parts";
-                        part.PartLabel = "";
-                        m_parts.Add(part);
+        //Bridge
+        decimal CutWaste = decimal.Zero;
+            for (int j = 1; j < trackHelper.BridgeCount + 1; j++)
+            {
+                part = new Part(3445, "BridgePoc", this, 1, bridgeGenie.result[panelCount-1]);
+                part.PartGroupType = "PocBrdgAssY";
+                part.PartLabel = "";
+                m_parts.Add(part);
                         CutWaste += 0.125m;
-                    }
-                    part = new Part(3445, "CutPocWaste", this, 1, CutWaste);
-                    m_parts.Add(part);
-                
+            }
+                part = new Part(3445, "CutPocWaste", this, 1, CutWaste);
+                m_parts.Add(part);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////    
 
         //BridgeClips
-
         part = new Part(3446, "BridgeClipsPoc", this, trackHelper.BridgeCount * 2, 0.0m);
-        part.PartGroupType = "PocBrdgAssY-Parts";
+        part.PartGroupType = "PocBrdgAssY";
         part.PartLabel = "";
-
         m_parts.Add(part);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////
 
         //TrackClips
         part = new Part(3447, "TrackClipsPoc", this, trackHelper.BridgeCount * panelCount * 2, 0.0m);
-        part.PartGroupType = "PocBrdgAssY-Parts";
+        part.PartGroupType = "PocBrdgAssY";
         part.PartLabel = "";
-
         m_parts.Add(part);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////
 
         //NutPlateConnector
-
         // your the second door but NOT second to last
-
         part = new Part(3448, "NutPlateConPoc", this, (trackHelper.BridgeCount) * (panelCount - 2), 0.0m);
-        part.PartGroupType = "PocBrdgAssY-Parts";
+        part.PartGroupType = "PocBrdgAssY";
         part.PartLabel = "";
-
         m_parts.Add(part);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////
 
         //CapScrews
-
         part = new Part(3449, "CapScrewsPoc", this, trackHelper.BridgeCount * panelCount * 2, 0.0m);
-        part.PartGroupType = "PocBrdgAssY-Parts";
+        part.PartGroupType = "PocBrdgAssY";
         part.PartLabel = "";
-
         m_parts.Add(part);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////
 
         //FlangeNuts
         part = new Part(3450, "FlangeNutsPoc", this, trackHelper.BridgeCount * 4, 0.0m);
-        part.PartGroupType = "PocBrdgAssY-Parts";
+        part.PartGroupType = "PocBrdgAssY";
         part.PartLabel = "";
-
         m_parts.Add(part);
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////
 
         //TrackBolts
         //part = new Part(3451, "TrackBoltsPoc", this, trackHelper.BridgeCount * 2, 0.0m);
-        //part.PartGroupType = "PocBrdgAssY-Parts";
+        //part.PartGroupType = "PocBrdgAssY";
         //part.PartLabel = "";
-
         //m_parts.Add(part);
 
-
+        //////////////////////////////////////////////////////////////////////////////////////////////////
 
         #endregion
 
-           
         }
 
         #endregion
 
-
     }
+
 }

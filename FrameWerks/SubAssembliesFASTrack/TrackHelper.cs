@@ -33,13 +33,14 @@ using FrameWorks;
 namespace FrameWorks
 {
 
+
     public class TrackHelper
     {
 
         #region Fields
         //-----------------------------------      
-        readonly decimal STILEWIDTH = 2.5625m;
-        readonly decimal STILEOVRLP = 2.5625m;   
+        readonly decimal STILEWIDTH = 1.34375m;
+        readonly decimal STILEOVRLP = 1.34375m;   
         readonly decimal MAXDRAINSPACE = 30.0m;
         //-----------------------------------
 
@@ -65,7 +66,6 @@ namespace FrameWorks
         #endregion
 
         #region Properties
-
 
 
 

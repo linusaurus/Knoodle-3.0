@@ -61,10 +61,11 @@ namespace FrameWorks.Makes.System3000
 
          Part part;
          string partleader =  this.Parent.UnitID + "." + this.CreateID.ToString();
-
     
-
+            
          #region Sash
+
+        //////////////////////////////////////////////////////////////////////////////
 
          // StileL
          part = new Part(1167);
@@ -79,8 +80,8 @@ namespace FrameWorks.Makes.System3000
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
-  
-
+        //////////////////////////////////////////////////////////////////////////////
+ 
          // StileR
          part = new Part(1167);
          part.Qnty = 1;
@@ -93,6 +94,8 @@ namespace FrameWorks.Makes.System3000
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
+
+        //////////////////////////////////////////////////////////////////////////////
 
          // RailT
          part = new Part(1167);
@@ -107,6 +110,8 @@ namespace FrameWorks.Makes.System3000
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
+        //////////////////////////////////////////////////////////////////////////////
+
          // RailB
          part = new Part(1167);
          part.Qnty = 1;
@@ -120,6 +125,8 @@ namespace FrameWorks.Makes.System3000
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
          
+        //////////////////////////////////////////////////////////////////////////////
+
          #endregion
 
          #region Filler
@@ -301,8 +308,6 @@ namespace FrameWorks.Makes.System3000
 
             #region Labor
 
-
-
          part = new LPart("Design", this, 4.0m, 80.0m);
          m_parts.Add(part);
          //Collect Information on Sizes: Measure: Provide Information for Approval: Order: Supervision
@@ -370,6 +375,6 @@ namespace FrameWorks.Makes.System3000
 
       #endregion
 
-
    }
+
 }

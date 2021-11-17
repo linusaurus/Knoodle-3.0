@@ -76,95 +76,75 @@ namespace FrameWorks.Makes.System3000
 
             #region Shower-Frame
 
-
             // CornerPost
             part = new Part(2970, "CornerPost", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // MullionV
             part = new Part(2970, "MullionV", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // JambRightW
             part = new Part(2970, "JambRightW", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // JambLeftW
             part = new Part(2970, "JambLeftW", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // JambRightP
             part = new Part(2970, "JambRightP", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // JambLeftP
             part = new Part(2970, "JambRightP", this, 1, m_subAssemblyHieght);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             // MullionH
             part = new Part(2970, "MullionH", this, 1, m_subAssemblyWidth - 12.0m);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // HeadD
             part = new Part(2970, "HeadD", this, 1, m_subAssemblyDepth);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             //Threshold/SillD
             part = new Part(2970, "Threshold/SillD", this, 1, m_subAssemblyDepth);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             // HeadW
             part = new Part(2970, "HeadW", this, 1, m_subAssemblyWidth);
             part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartLabel = "";            
             m_parts.Add(part);
 
             //Threshold/SillW
             part = new Part(2970, "Threshold/SillW", this, 1, m_subAssemblyWidth);
-            part.PartGroupType = "Frame-Parts";
-            part.PartLabel = "";
-            
+            part.PartGroupType = "Frame";
+            part.PartLabel = "";            
             m_parts.Add(part);
-
 
             #endregion
 
-
                  #region Labor
-
 
             part = new LPart("MetalHours", this, 9.0m, 80.0m);
             m_parts.Add(part);
@@ -174,9 +154,6 @@ namespace FrameWorks.Makes.System3000
             m_parts.Add(part);
             //2 SandLineGrain: 2 Finish
 
-
-
-
             #endregion
 
         }
@@ -184,4 +161,5 @@ namespace FrameWorks.Makes.System3000
         #endregion
 
     }
+
 }

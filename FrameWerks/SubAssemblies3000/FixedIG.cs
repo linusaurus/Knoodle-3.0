@@ -63,11 +63,10 @@ namespace FrameWorks.Makes.System3000
 
          #region Frame
 
-
          // JambRight -->>
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght;
          part.FunctionalName = "JambR";
@@ -78,7 +77,7 @@ namespace FrameWorks.Makes.System3000
          // JambLeft <<--
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght;
          part.FunctionalName = "JambL";
@@ -89,7 +88,7 @@ namespace FrameWorks.Makes.System3000
          // Head ^^
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth;
          part.FunctionalName = "Head";
@@ -100,7 +99,7 @@ namespace FrameWorks.Makes.System3000
          // Sill ||
          part = new Part(804);
          part.Qnty = 1;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth;
          part.FunctionalName = "Sill";
@@ -111,15 +110,13 @@ namespace FrameWorks.Makes.System3000
          // Braces
          part = new Part(1117);
          part.Qnty = 8;
-         part.PartGroupType = "Frame-Parts";
+         part.PartGroupType = "Frame";
          part.ContainerAssembly = this;
          part.FunctionalName = "Braces";
          part.PartLabel = "";
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
          
- 
-
          #endregion
 
          #region Stops
@@ -127,7 +124,7 @@ namespace FrameWorks.Makes.System3000
          // StopRight
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght  - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -140,7 +137,7 @@ namespace FrameWorks.Makes.System3000
          // StopLeft
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyHieght  - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -153,7 +150,7 @@ namespace FrameWorks.Makes.System3000
          // StopTop
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth   - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -168,7 +165,7 @@ namespace FrameWorks.Makes.System3000
          crap = FrameWorks.Functions.StopWeepMachining(m_subAssemblyWidth - 2.0m * .625m);
          part = new Part(809);
          part.Qnty = 1;
-         part.PartGroupType = "Stop-Parts";
+         part.PartGroupType = "Stop";
          part.ContainerAssembly = this;
          part.PartLength = m_subAssemblyWidth   - (0.625m * 2.0m);
          part.PartWidth = part.Source.Width;
@@ -183,12 +180,10 @@ namespace FrameWorks.Makes.System3000
 
          #region Glass
 
-
          //Glass Panel
-
          part = new Part(2828);
          part.FunctionalName = "Glass";
-         part.PartGroupType = "Glass-Parts";
+         part.PartGroupType = "Glass";
          part.Qnty = 1;
          part.PartName = "PartName";
          part.PartLabel = "";
@@ -198,12 +193,9 @@ namespace FrameWorks.Makes.System3000
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part);
 
-
-
          #endregion
 
          #region Seal/Weatherstripping
-
 
          decimal peri = FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyDepth);
          peri += FrameWorks.Functions.Perimeter(m_subAssemblyHieght, m_subAssemblyWidth);
@@ -212,11 +204,9 @@ namespace FrameWorks.Makes.System3000
 
          //Glazing Seals
          part = new Part(1819, "Glazing Seal", this, 2, peri);
-         part.PartGroupType = "Seal-Parts";
-         part.PartLabel = "";
-         
+         part.PartGroupType = "Seal";
+         part.PartLabel = "";         
          m_parts.Add(part);
-
 
          #endregion
 
@@ -257,17 +247,12 @@ namespace FrameWorks.Makes.System3000
          m_parts.Add(part);
           //1 Load
 
-
-
          #endregion
 
-
       }
-
-      
-
+     
       #endregion
 
-
    }
+
 }

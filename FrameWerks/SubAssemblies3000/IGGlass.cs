@@ -63,12 +63,10 @@ namespace FrameWorks.Makes.System3000
 
          #region Glass
 
-
          //Glass Panel
-
          part = new Part(2828);
          part.FunctionalName = "Glass";
-         part.PartGroupType = "Glass-Parts";
+         part.PartGroupType = "Glass";
          part.PartName = "PartName";
          part.PartLabel = "";
          part.ContainerAssembly = this;
@@ -77,17 +75,12 @@ namespace FrameWorks.Makes.System3000
          part.PartIdentifier= partleader + "." + Convert.ToString(createID++);
          m_parts.Add(part); 
          
-
          #endregion
-
-
 
       }
 
-
-
       #endregion
 
-
    }
+
 }

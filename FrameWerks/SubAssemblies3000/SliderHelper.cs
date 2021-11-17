@@ -84,7 +84,6 @@ namespace FrameWorks.Makes.System3000
                     m_division = m_adjustedWidth - STILEWIDTH;
                     m_division /= m_decimalDoorCount;
 
-
                     return Math.Round(m_division, 4);
                 }
 
@@ -138,7 +137,6 @@ namespace FrameWorks.Makes.System3000
 
                     }
 
-
                     return Math.Round(m_FloorTrackLength, 4);
 
                 }
@@ -178,9 +176,7 @@ namespace FrameWorks.Makes.System3000
 
                         m_TopTrackLength +=  0.375m - 0.09375m + 0.59375m;
 
-
                     }
-
 
                     return Math.Round(m_TopTrackLength, 4);
 
@@ -190,18 +186,7 @@ namespace FrameWorks.Makes.System3000
 
             #endregion
 
-
         }
-
-
-
-
-
-
-
-
-
-
 
 
         public class SliderPXHelper
@@ -254,7 +239,6 @@ namespace FrameWorks.Makes.System3000
                     m_division = m_adjustedWidth - STILEWIDTH;
                     m_division /= m_decimalDoorCount;
 
-
                     return Math.Round(m_division, 4);
                 }
 
@@ -299,7 +283,6 @@ namespace FrameWorks.Makes.System3000
 
                     }
 
-
                     return Math.Round(m_FloorTrackLength, 4);
 
                 }
@@ -338,21 +321,16 @@ namespace FrameWorks.Makes.System3000
                     decimal position = Convert.ToDecimal(m_doorRef);
                     m_adjustedWidth = m_openingWidth + 0.375m;
 
-
                     if (m_doorRef == 1)
                     {
                         m_TopTrackLength = (m_openingWidth + DoorPanelSize + 0.375m);
                     }
                     else
                     {
-
                         m_TopTrackLength = (((m_decimalDoorCount + 1.0m) - position) * Division);
                         m_TopTrackLength += STILEWIDTH;
                         m_TopTrackLength += DoorPanelSize;
-
-
                     }
-
 
                     return Math.Round(m_TopTrackLength, 4);
 
@@ -362,8 +340,8 @@ namespace FrameWorks.Makes.System3000
 
             #endregion
 
-
         }
 
     }
+
 }

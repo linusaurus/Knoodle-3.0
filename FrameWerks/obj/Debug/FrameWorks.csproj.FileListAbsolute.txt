@@ -76,3 +76,42 @@ C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\Fr
 C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\stdole.dll
 C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.CoreCompileInputs.cache
 C:\Users\Don.DESIGNSYNTHESIS\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csprojResolveAssemblyReference.cache
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.dll.config
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.pdb
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\bin\Debug\stdole.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csprojAssemblyReference.cache
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.CoreCompileInputs.cache
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.CopyComplete
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.dll
+C:\Users\Don\Documents\Visual Studio 2012\Projects\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.pdb
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.dll.config
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.pdb
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\bin\Debug\stdole.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csprojAssemblyReference.cache
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.CoreCompileInputs.cache
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.CopyComplete
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.dll
+C:\Users\Don\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.pdb
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.dll.config
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\FrameWorks.pdb
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\bin\Debug\stdole.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.AssemblyReference.cache
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.CoreCompileInputs.cache
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.csproj.CopyComplete
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.dll
+C:\Users\Rich.DESIGNSYNTHESIS\source\repos\Knoodle3-0\FrameWerks\obj\Debug\FrameWorks.pdb
