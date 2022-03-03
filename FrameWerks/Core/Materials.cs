@@ -51,7 +51,7 @@ namespace FrameWorks
       {
          //string ConString = @"Password=Kx09a32x;Persist Security Info=True;User ID=sa;Initial Catalog=badger;Data Source=192.168.10.3";
 
-          string ConString = "data source=FILE-SERVER;initial catalog = Mosaic; persist security info = True;Integrated Security = SSPI";  
+          string ConString = "data source=File-Server;initial catalog = Mosaic; persist security info = True;Integrated Security = SSPI";  
         // string ConString = connectionString;
          SqlConnection con = new SqlConnection(ConString);
         
@@ -89,8 +89,7 @@ namespace FrameWorks
             if (!reader.IsDBNull(6))material.Waste = reader.GetDecimal(6);
             // Markup
             if (!reader.IsDBNull(7)) material.MarkUp = reader.GetDecimal(7);
-            // SupplierID 
-           // if (!reader.IsDBNull(8)) material.SupplierID  = reader.GetInt32 (8);
+          
  
             m_partSource.Add(reader.GetInt32(0), material);
 
